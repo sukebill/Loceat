@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3ABF08FF0F929BACD73A4C /* Pods_Loceat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22879B718EF4E934721C418C /* Pods_Loceat.framework */; };
+		6676508134DC9B46137214B4 /* Pods_LoceatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */; };
+		AAA070F2F0B5E69723015FC0 /* Pods_Loceat_LoceatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */; };
 		D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4650D2492AFA40024E6CA /* AppDelegate.swift */; };
 		D5D465152492AFA40024E6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D465132492AFA40024E6CA /* Main.storyboard */; };
 		D5D465172492AFA70024E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D465162492AFA70024E6CA /* Assets.xcassets */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22879B718EF4E934721C418C /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26407B21B22282F82FCCFB0F /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.debug.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		938D3797960B3C300BD30743 /* Pods-Loceat-LoceatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-LoceatTests/Pods-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.release.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
 		D5D4650A2492AFA40024E6CA /* Loceat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loceat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4650D2492AFA40024E6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D465142492AFA40024E6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +64,9 @@
 		D5D465472492B0E50024E6CA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D5D4654B2492B1380024E6CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoceatTests.release.xcconfig"; path = "Target Support Files/Pods-LoceatTests/Pods-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3ABF08FF0F929BACD73A4C /* Pods_Loceat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6676508134DC9B46137214B4 /* Pods_LoceatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA070F2F0B5E69723015FC0 /* Pods_Loceat_LoceatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DCE8224E0E2A9C2BB83B699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22879B718EF4E934721C418C /* Pods_Loceat.framework */,
+				8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */,
+				F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FA4A69DBBF349EAB1A6C114 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26407B21B22282F82FCCFB0F /* Pods-Loceat.debug.xcconfig */,
+				BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */,
+				938D3797960B3C300BD30743 /* Pods-Loceat-LoceatUITests.debug.xcconfig */,
+				EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */,
+				9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */,
+				F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D5D465012492AFA40024E6CA = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,8 @@
 				D5D465232492AFA80024E6CA /* LoceatTests */,
 				D5D4652E2492AFA80024E6CA /* LoceatUITests */,
 				D5D4650B2492AFA40024E6CA /* Products */,
+				3FA4A69DBBF349EAB1A6C114 /* Pods */,
+				3DCE8224E0E2A9C2BB83B699 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D465342492AFA80024E6CA /* Build configuration list for PBXNativeTarget "Loceat" */;
 			buildPhases = (
+				258AF160FF7FD6B7E63817B6 /* [CP] Check Pods Manifest.lock */,
 				D5D465062492AFA40024E6CA /* Sources */,
 				D5D465072492AFA40024E6CA /* Frameworks */,
 				D5D465082492AFA40024E6CA /* Resources */,
@@ -201,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D465372492AFA80024E6CA /* Build configuration list for PBXNativeTarget "LoceatTests" */;
 			buildPhases = (
+				2DB057D29CB8BC89E5A01B5D /* [CP] Check Pods Manifest.lock */,
 				D5D4651C2492AFA70024E6CA /* Sources */,
 				D5D4651D2492AFA70024E6CA /* Frameworks */,
 				D5D4651E2492AFA70024E6CA /* Resources */,
@@ -219,6 +262,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5D4653A2492AFA80024E6CA /* Build configuration list for PBXNativeTarget "LoceatUITests" */;
 			buildPhases = (
+				4FE10C983F04223E0867FF1A /* [CP] Check Pods Manifest.lock */,
 				D5D465272492AFA80024E6CA /* Sources */,
 				D5D465282492AFA80024E6CA /* Frameworks */,
 				D5D465292492AFA80024E6CA /* Resources */,
@@ -302,6 +346,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258AF160FF7FD6B7E63817B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loceat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB057D29CB8BC89E5A01B5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoceatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE10C983F04223E0867FF1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loceat-LoceatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5D465062492AFA40024E6CA /* Sources */ = {
@@ -484,6 +597,7 @@
 		};
 		D5D465352492AFA80024E6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26407B21B22282F82FCCFB0F /* Pods-Loceat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +616,7 @@
 		};
 		D5D465362492AFA80024E6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +635,7 @@
 		};
 		D5D465382492AFA80024E6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +657,7 @@
 		};
 		D5D465392492AFA80024E6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +679,7 @@
 		};
 		D5D4653B2492AFA80024E6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938D3797960B3C300BD30743 /* Pods-Loceat-LoceatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -581,6 +699,7 @@
 		};
 		D5D4653C2492AFA80024E6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
