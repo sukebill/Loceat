@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navCtrl
         window?.makeKeyAndVisible()
+        initGoogleMaps()
         return true
+    }
+    
+    private func initGoogleMaps() {
+        GMSServices.provideAPIKey("AIzaSyBW1Dkmby8qOMZvNy-JWV1KmKuR39DWfkc")
     }
 }
 

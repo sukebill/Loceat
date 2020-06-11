@@ -6,16 +6,28 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		014543CB667348C5EC93F9BA4AEF1701 /* Pods-Loceat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6541C5E019207598FBAB2A0D288C499E /* Pods-Loceat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556DB05528159DFC4B76956FF14E2574 /* Pods-Loceat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE26296DC299AC7D88A0A2CB8C5ABCB9 /* Pods-Loceat-dummy.m */; };
-		8815A3DCBADE2E978621B4EEA9E2EF43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9E40BD8BD649841353B2068D9269B6BC /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1C2FC748B32E5BB1EA14CB022A4268 /* Pods-Loceat-LoceatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30EAB49CF84C961F0959E7139C7700D5 /* Pods-Loceat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C602CB3B1EC89F73F980CFD2484A6E /* Pods-Loceat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D0FBB49AF2F53C2ACB571AE51F79AE0 /* Pods-Loceat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5646B377BB4372F0BA9E2E9274D904 /* Pods-Loceat-dummy.m */; };
+		7FC2BCD9AC6368B59F277FE3F79BCC70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		AE30AEE0CAA040AA4F5A9E6147703C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B217C6E015EABAE658B6574022817E5C /* Pods-LoceatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00710777EBF3EFE73A855204F1389206 /* Pods-LoceatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C695F3663FCDBA279C888015790F2AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D88BE68F86A0206974F6EB74D7360708 /* Pods-LoceatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 664D99E26E4FF77BD1F09B229F38F11F /* Pods-LoceatTests-dummy.m */; };
-		E8F813284B3A45E148D98AD9189AE389 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5938130BE21ECC747C53A7FB646887 /* Pods-Loceat-LoceatUITests-dummy.m */; };
+		B217C6E015EABAE658B6574022817E5C /* Pods-LoceatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C85546F0D6C389B9793CCAA071843238 /* Pods-LoceatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD0B9E2569564641DA2855B8C309BFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D41612C762BBD577622F3BB0AD674A29 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B05A382556DC6FA164974D0F06EB1FD1 /* Pods-Loceat-LoceatUITests-dummy.m */; };
+		D88BE68F86A0206974F6EB74D7360708 /* Pods-LoceatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB076C17952B20600BACA69FE30A8896 /* Pods-LoceatTests-dummy.m */; };
+		E26A513950AC36732BB64EFDCD882B55 /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47821995F34706E860D991C89EF862BE /* Pods-Loceat-LoceatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,41 +38,70 @@
 			remoteGlobalIDString = 6E63C56D74BB523CA36FF5D0245E9AAD;
 			remoteInfo = "Pods-Loceat";
 		};
+		DD84645B4F5DEF1CCDA6530764028DC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		E43F934192B38047D28C0497CCFB6555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00710777EBF3EFE73A855204F1389206 /* Pods-LoceatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoceatTests-umbrella.h"; sourceTree = "<group>"; };
-		0B5938130BE21ECC747C53A7FB646887 /* Pods-Loceat-LoceatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-LoceatUITests-dummy.m"; sourceTree = "<group>"; };
 		0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat.framework; path = "Pods-Loceat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18152D39EA67F165556635662D0F5B13 /* Pods-LoceatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoceatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1DEC8EB379B43EDD2E9D2DD3CDA6A634 /* Pods-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
-		20FA054BCFC0EC91971C50FCC6059D7B /* Pods-LoceatTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoceatTests-Info.plist"; sourceTree = "<group>"; };
-		257B0D3F6E81FF31DFB0CC9B59D962C8 /* Pods-LoceatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoceatTests.modulemap"; sourceTree = "<group>"; };
-		27BEE739DD0E8279A723AD35DBDEC6BD /* Pods-Loceat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2AFBF260E68DD087E84C6A9AC61899F6 /* Pods-Loceat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-Info.plist"; sourceTree = "<group>"; };
+		0F81B9BFB3642BA3C40F24FB4822F393 /* Pods-LoceatTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoceatTests-Info.plist"; sourceTree = "<group>"; };
+		106AE8ED7FE54BD7DB073121E8296FB9 /* Pods-Loceat-LoceatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatUITests-resources.sh"; sourceTree = "<group>"; };
+		22C602CB3B1EC89F73F980CFD2484A6E /* Pods-Loceat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4CE0D22B2805E1AA1352467F78B5F7B0 /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
-		4F1C2FC748B32E5BB1EA14CB022A4268 /* Pods-Loceat-LoceatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-LoceatUITests-umbrella.h"; sourceTree = "<group>"; };
+		47821995F34706E860D991C89EF862BE /* Pods-Loceat-LoceatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-LoceatUITests-umbrella.h"; sourceTree = "<group>"; };
+		496B72537C3B0114B2965131266F1025 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-LoceatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		5B2AC02BC706F77E8CC56968537DBB39 /* Pods-LoceatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoceatTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		61A781E0A200EAE1F5118F4E9733F33F /* Pods_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LoceatTests.framework; path = "Pods-LoceatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6541C5E019207598FBAB2A0D288C499E /* Pods-Loceat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-umbrella.h"; sourceTree = "<group>"; };
-		664D99E26E4FF77BD1F09B229F38F11F /* Pods-LoceatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoceatTests-dummy.m"; sourceTree = "<group>"; };
-		71531FCFD171AD72F2943B3568472C24 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		748C72575F22F41DA7FDCEF751D14BB7 /* Pods-Loceat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-acknowledgements.plist"; sourceTree = "<group>"; };
-		772ABA7247DE1FC54205C5CAE2D97566 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-LoceatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68DED031634D62A4E5E7D3530E2F061A /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EBA4C1D285DF6CE880A4740A2478979 /* Pods-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F5646B377BB4372F0BA9E2E9274D904 /* Pods-Loceat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-dummy.m"; sourceTree = "<group>"; };
+		7337012004F7C1CAB2041C9EF565213C /* Pods-LoceatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LoceatTests.modulemap"; sourceTree = "<group>"; };
+		76828EBA8C764234038EE323A6F28CE9 /* Pods-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81CEF0FC6AD7C924E1B92AE8C7CE818A /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
 		8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat_LoceatUITests.framework; path = "Pods-Loceat-LoceatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96BF9A59C2354599A1848B7F64DD2F92 /* Pods-Loceat-LoceatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat-LoceatUITests.modulemap"; sourceTree = "<group>"; };
+		8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		8C9F0573EAFCBA1D18A6D85B54E57048 /* Pods-Loceat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F8197C317B1F11A1C5824CF703843A0 /* Pods-Loceat-LoceatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat-LoceatUITests.modulemap"; sourceTree = "<group>"; };
+		98329D791A80810D5633099FA25ACDA8 /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
+		99722591588CB4280EAE869CC4B8EE3E /* Pods-Loceat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat.modulemap"; sourceTree = "<group>"; };
+		9D2BC6F4C89A49E72F625ACD68E7489E /* Pods-Loceat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-resources.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B4506187E2714CFFD489EEB48BDEED9C /* Pods-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B94C887A32B891F577CE9E36430F3C27 /* Pods-Loceat-LoceatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D49964355C8B577C1209959594B468F4 /* Pods-Loceat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat.modulemap"; sourceTree = "<group>"; };
-		D99ADE7151FCBC7E5818417DB8D9F0CF /* Pods-LoceatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LoceatTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAD9987528C9BBC5DA592ADA85ADB6A8 /* Pods-Loceat-LoceatUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-Info.plist"; sourceTree = "<group>"; };
-		EE26296DC299AC7D88A0A2CB8C5ABCB9 /* Pods-Loceat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-dummy.m"; sourceTree = "<group>"; };
-		F79A6D8229CEFDE5F1E23427A9047A46 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
-		F92ED9006AF5F1174895736D30CA5873 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B05A382556DC6FA164974D0F06EB1FD1 /* Pods-Loceat-LoceatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-LoceatUITests-dummy.m"; sourceTree = "<group>"; };
+		B15FFBA6BD105F81E6C966CF2B5C19EF /* Pods-LoceatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LoceatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BCA0E9DEF070F5242D6378CE723974D8 /* Pods-Loceat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD6D9DB06EA7D94683BCEF27654078E2 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C85546F0D6C389B9793CCAA071843238 /* Pods-LoceatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LoceatTests-umbrella.h"; sourceTree = "<group>"; };
+		CB076C17952B20600BACA69FE30A8896 /* Pods-LoceatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LoceatTests-dummy.m"; sourceTree = "<group>"; };
+		CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		D2DD5E782E2847084CA5444A203D33B2 /* Pods-Loceat-LoceatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6E82CE8BF9F2E555B6AB7E6D976C23 /* Pods-Loceat-LoceatUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-Info.plist"; sourceTree = "<group>"; };
+		F51B2B211075A8370499BC58673889DC /* Pods-Loceat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		028F7E5D950FBF87E3FA1F4B84BD9A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC2BCD9AC6368B59F277FE3F79BCC70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55E7A9116D07A65658A88DFEF35DE6B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,65 +110,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F12927048189BC366F0BA8BE7722EF4 /* Frameworks */ = {
+		B5CCCA66E3291CB2714C960BDDD69F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C695F3663FCDBA279C888015790F2AF8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4DE5C9B6C520B8BB12A55F2ECC70AA2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8815A3DCBADE2E978621B4EEA9E2EF43 /* Foundation.framework in Frameworks */,
+				CD0B9E2569564641DA2855B8C309BFA0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C3EE2595A1D3F645AA8E41B1F7B848A /* Pods-Loceat-LoceatUITests */ = {
+		2C4EB33A076BB7654667F327222F2A96 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				96BF9A59C2354599A1848B7F64DD2F92 /* Pods-Loceat-LoceatUITests.modulemap */,
-				772ABA7247DE1FC54205C5CAE2D97566 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */,
-				F92ED9006AF5F1174895736D30CA5873 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */,
-				0B5938130BE21ECC747C53A7FB646887 /* Pods-Loceat-LoceatUITests-dummy.m */,
-				EAD9987528C9BBC5DA592ADA85ADB6A8 /* Pods-Loceat-LoceatUITests-Info.plist */,
-				4F1C2FC748B32E5BB1EA14CB022A4268 /* Pods-Loceat-LoceatUITests-umbrella.h */,
-				B94C887A32B891F577CE9E36430F3C27 /* Pods-Loceat-LoceatUITests.debug.xcconfig */,
-				71531FCFD171AD72F2943B3568472C24 /* Pods-Loceat-LoceatUITests.release.xcconfig */,
+				CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */,
 			);
-			name = "Pods-Loceat-LoceatUITests";
-			path = "Target Support Files/Pods-Loceat-LoceatUITests";
-			sourceTree = "<group>";
-		};
-		374DC439D278BB499D140EC0F9B7E96D /* Pods-Loceat */ = {
-			isa = PBXGroup;
-			children = (
-				D49964355C8B577C1209959594B468F4 /* Pods-Loceat.modulemap */,
-				27BEE739DD0E8279A723AD35DBDEC6BD /* Pods-Loceat-acknowledgements.markdown */,
-				748C72575F22F41DA7FDCEF751D14BB7 /* Pods-Loceat-acknowledgements.plist */,
-				EE26296DC299AC7D88A0A2CB8C5ABCB9 /* Pods-Loceat-dummy.m */,
-				2AFBF260E68DD087E84C6A9AC61899F6 /* Pods-Loceat-Info.plist */,
-				6541C5E019207598FBAB2A0D288C499E /* Pods-Loceat-umbrella.h */,
-				4CE0D22B2805E1AA1352467F78B5F7B0 /* Pods-Loceat.debug.xcconfig */,
-				F79A6D8229CEFDE5F1E23427A9047A46 /* Pods-Loceat.release.xcconfig */,
-			);
-			name = "Pods-Loceat";
-			path = "Target Support Files/Pods-Loceat";
-			sourceTree = "<group>";
-		};
-		41FD598EC8FB9B0CE4A8754ADE944426 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				374DC439D278BB499D140EC0F9B7E96D /* Pods-Loceat */,
-				2C3EE2595A1D3F645AA8E41B1F7B848A /* Pods-Loceat-LoceatUITests */,
-				D54D3B2A77B9C48FC20083EAC47C6ACD /* Pods-LoceatTests */,
-			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
 			sourceTree = "<group>";
 		};
 		439C41FC3F5770D85B7E7C86AADCE0EB /* Products */ = {
@@ -140,6 +140,103 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		43C039CCB03492898D7213C53BE52975 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A48B8A959A5B848A822DC3ABE0BBD074 /* Pods-Loceat */,
+				8AA804C1AE925C9F0DDFB45819D43E5A /* Pods-Loceat-LoceatUITests */,
+				59458E0FAF3435059D3DCA90AF5C1590 /* Pods-LoceatTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		59458E0FAF3435059D3DCA90AF5C1590 /* Pods-LoceatTests */ = {
+			isa = PBXGroup;
+			children = (
+				7337012004F7C1CAB2041C9EF565213C /* Pods-LoceatTests.modulemap */,
+				B15FFBA6BD105F81E6C966CF2B5C19EF /* Pods-LoceatTests-acknowledgements.markdown */,
+				5B2AC02BC706F77E8CC56968537DBB39 /* Pods-LoceatTests-acknowledgements.plist */,
+				CB076C17952B20600BACA69FE30A8896 /* Pods-LoceatTests-dummy.m */,
+				0F81B9BFB3642BA3C40F24FB4822F393 /* Pods-LoceatTests-Info.plist */,
+				C85546F0D6C389B9793CCAA071843238 /* Pods-LoceatTests-umbrella.h */,
+				76828EBA8C764234038EE323A6F28CE9 /* Pods-LoceatTests.debug.xcconfig */,
+				6EBA4C1D285DF6CE880A4740A2478979 /* Pods-LoceatTests.release.xcconfig */,
+			);
+			name = "Pods-LoceatTests";
+			path = "Target Support Files/Pods-LoceatTests";
+			sourceTree = "<group>";
+		};
+		635C391EBEDEECEBED7C587C09F80C29 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */,
+				CB4FFE30125DB944A69FABB13465CBF9 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		6DC984D737DB841E41A9D175E8069AED /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		7A2FE3E30CF6F7F1C609C86668A4411D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BEF52437C1E4AB431C3FBA86771C36E /* GoogleMaps.framework */,
+				8C2B5D150CEE6BBB83CC0A67F1F8E93A /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AA804C1AE925C9F0DDFB45819D43E5A /* Pods-Loceat-LoceatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F8197C317B1F11A1C5824CF703843A0 /* Pods-Loceat-LoceatUITests.modulemap */,
+				496B72537C3B0114B2965131266F1025 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */,
+				BD6D9DB06EA7D94683BCEF27654078E2 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */,
+				B05A382556DC6FA164974D0F06EB1FD1 /* Pods-Loceat-LoceatUITests-dummy.m */,
+				DB6E82CE8BF9F2E555B6AB7E6D976C23 /* Pods-Loceat-LoceatUITests-Info.plist */,
+				106AE8ED7FE54BD7DB073121E8296FB9 /* Pods-Loceat-LoceatUITests-resources.sh */,
+				47821995F34706E860D991C89EF862BE /* Pods-Loceat-LoceatUITests-umbrella.h */,
+				D2DD5E782E2847084CA5444A203D33B2 /* Pods-Loceat-LoceatUITests.debug.xcconfig */,
+				68DED031634D62A4E5E7D3530E2F061A /* Pods-Loceat-LoceatUITests.release.xcconfig */,
+			);
+			name = "Pods-Loceat-LoceatUITests";
+			path = "Target Support Files/Pods-Loceat-LoceatUITests";
+			sourceTree = "<group>";
+		};
+		A48B8A959A5B848A822DC3ABE0BBD074 /* Pods-Loceat */ = {
+			isa = PBXGroup;
+			children = (
+				99722591588CB4280EAE869CC4B8EE3E /* Pods-Loceat.modulemap */,
+				8C9F0573EAFCBA1D18A6D85B54E57048 /* Pods-Loceat-acknowledgements.markdown */,
+				BCA0E9DEF070F5242D6378CE723974D8 /* Pods-Loceat-acknowledgements.plist */,
+				6F5646B377BB4372F0BA9E2E9274D904 /* Pods-Loceat-dummy.m */,
+				F51B2B211075A8370499BC58673889DC /* Pods-Loceat-Info.plist */,
+				9D2BC6F4C89A49E72F625ACD68E7489E /* Pods-Loceat-resources.sh */,
+				22C602CB3B1EC89F73F980CFD2484A6E /* Pods-Loceat-umbrella.h */,
+				98329D791A80810D5633099FA25ACDA8 /* Pods-Loceat.debug.xcconfig */,
+				81CEF0FC6AD7C924E1B92AE8C7CE818A /* Pods-Loceat.release.xcconfig */,
+			);
+			name = "Pods-Loceat";
+			path = "Target Support Files/Pods-Loceat";
+			sourceTree = "<group>";
+		};
+		AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6DC984D737DB841E41A9D175E8069AED /* Base */,
+				635C391EBEDEECEBED7C587C09F80C29 /* Maps */,
+				2C4EB33A076BB7654667F327222F2A96 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,13 +245,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		CB4FFE30125DB944A69FABB13465CBF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				521C05AB6AE7B9910A233B63B560FF70 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF3634087891871FA7B65CC4A8E6DB71 /* Pods */,
 				439C41FC3F5770D85B7E7C86AADCE0EB /* Products */,
-				41FD598EC8FB9B0CE4A8754ADE944426 /* Targets Support Files */,
+				43C039CCB03492898D7213C53BE52975 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,38 +272,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D54D3B2A77B9C48FC20083EAC47C6ACD /* Pods-LoceatTests */ = {
+		DF3634087891871FA7B65CC4A8E6DB71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				257B0D3F6E81FF31DFB0CC9B59D962C8 /* Pods-LoceatTests.modulemap */,
-				18152D39EA67F165556635662D0F5B13 /* Pods-LoceatTests-acknowledgements.markdown */,
-				D99ADE7151FCBC7E5818417DB8D9F0CF /* Pods-LoceatTests-acknowledgements.plist */,
-				664D99E26E4FF77BD1F09B229F38F11F /* Pods-LoceatTests-dummy.m */,
-				20FA054BCFC0EC91971C50FCC6059D7B /* Pods-LoceatTests-Info.plist */,
-				00710777EBF3EFE73A855204F1389206 /* Pods-LoceatTests-umbrella.h */,
-				B4506187E2714CFFD489EEB48BDEED9C /* Pods-LoceatTests.debug.xcconfig */,
-				1DEC8EB379B43EDD2E9D2DD3CDA6A634 /* Pods-LoceatTests.release.xcconfig */,
+				AEB2EB54AE51001ACA52CF2A5CD80017 /* GoogleMaps */,
 			);
-			name = "Pods-LoceatTests";
-			path = "Target Support Files/Pods-LoceatTests";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E31401A986F325F1E4863EC2F7E087C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551F63664537853F32071E13FE4CC4FF /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BBCE3C45BD20D80A3BFE50D413661F71 /* Headers */ = {
+		4207CDD7E690CE2EFC01B11F3F96F569 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E40BD8BD649841353B2068D9269B6BC /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */,
+				E26A513950AC36732BB64EFDCD882B55 /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE3D923FC26245EA72874FB43916A363 /* Headers */ = {
+		5DAA030AFB8FD42192CBA2316AB9BC6A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014543CB667348C5EC93F9BA4AEF1701 /* Pods-Loceat-umbrella.h in Headers */,
+				30EAB49CF84C961F0959E7139C7700D5 /* Pods-Loceat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,16 +339,17 @@
 		};
 		6E63C56D74BB523CA36FF5D0245E9AAD /* Pods-Loceat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 589F9CA1833A6D3EE82C14549E389859 /* Build configuration list for PBXNativeTarget "Pods-Loceat" */;
+			buildConfigurationList = A283C899ACD5E94EE0BB1C437937E113 /* Build configuration list for PBXNativeTarget "Pods-Loceat" */;
 			buildPhases = (
-				CE3D923FC26245EA72874FB43916A363 /* Headers */,
-				8BFE6C428C3EF7E189E583791EA651B6 /* Sources */,
-				8F12927048189BC366F0BA8BE7722EF4 /* Frameworks */,
-				B4427FD5D1819EE5923452A1AFF2236C /* Resources */,
+				5DAA030AFB8FD42192CBA2316AB9BC6A /* Headers */,
+				B65BF5CF3D5CBF75271C593012DBEB5A /* Sources */,
+				028F7E5D950FBF87E3FA1F4B84BD9A72 /* Frameworks */,
+				84CA366BB5E2EF0C9A2FED5259CAB083 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				971267CD6E0BE656DEFB2AB9EC29EB56 /* PBXTargetDependency */,
 			);
 			name = "Pods-Loceat";
 			productName = "Pods-Loceat";
@@ -251,16 +358,17 @@
 		};
 		783B5C60929CF52F73E231B6ECC521E5 /* Pods-Loceat-LoceatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E51312D8E7EB3C450F51400CD831E0F /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */;
+			buildConfigurationList = 71146C68845913480D53A8C6CA9B687F /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */;
 			buildPhases = (
-				BBCE3C45BD20D80A3BFE50D413661F71 /* Headers */,
-				155626BBB9413B7E48082A46EA573237 /* Sources */,
-				A4DE5C9B6C520B8BB12A55F2ECC70AA2 /* Frameworks */,
-				16A915EB861B1DF15EC8347864E8A386 /* Resources */,
+				4207CDD7E690CE2EFC01B11F3F96F569 /* Headers */,
+				07CA524E0D80A5DDC0A666AB47A9E2CA /* Sources */,
+				B5CCCA66E3291CB2714C960BDDD69F06 /* Frameworks */,
+				8C301FEDA75D98B2E4201255F892B735 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9BA08E56261FE160C73643C69225FA3C /* PBXTargetDependency */,
 			);
 			name = "Pods-Loceat-LoceatUITests";
 			productName = "Pods-Loceat-LoceatUITests";
@@ -288,6 +396,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
 				6E63C56D74BB523CA36FF5D0245E9AAD /* Pods-Loceat */,
 				783B5C60929CF52F73E231B6ECC521E5 /* Pods-Loceat-LoceatUITests */,
 				31D0AE46A23F34FF055407CF90B682AE /* Pods-LoceatTests */,
@@ -296,13 +405,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		16A915EB861B1DF15EC8347864E8A386 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5A4D9FA0B5E4C1DCE4171518D2813178 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,7 +412,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4427FD5D1819EE5923452A1AFF2236C /* Resources */ = {
+		84CA366BB5E2EF0C9A2FED5259CAB083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C301FEDA75D98B2E4201255F892B735 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,19 +429,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		155626BBB9413B7E48082A46EA573237 /* Sources */ = {
+		07CA524E0D80A5DDC0A666AB47A9E2CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8F813284B3A45E148D98AD9189AE389 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */,
+				D41612C762BBD577622F3BB0AD674A29 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BFE6C428C3EF7E189E583791EA651B6 /* Sources */ = {
+		B65BF5CF3D5CBF75271C593012DBEB5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556DB05528159DFC4B76956FF14E2574 /* Pods-Loceat-dummy.m in Sources */,
+				5D0FBB49AF2F53C2ACB571AE51F79AE0 /* Pods-Loceat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,12 +462,24 @@
 			target = 6E63C56D74BB523CA36FF5D0245E9AAD /* Pods-Loceat */;
 			targetProxy = 5F2624569F6C5D2FFE37713E869DC353 /* PBXContainerItemProxy */;
 		};
+		971267CD6E0BE656DEFB2AB9EC29EB56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = DD84645B4F5DEF1CCDA6530764028DC3 /* PBXContainerItemProxy */;
+		};
+		9BA08E56261FE160C73643C69225FA3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = E43F934192B38047D28C0497CCFB6555 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12F6E3DF6E261A73FD9899AC778A9B1D /* Release */ = {
+		045470C90388FD8FE40AF9CEBD113B92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F79A6D8229CEFDE5F1E23427A9047A46 /* Pods-Loceat.release.xcconfig */;
+			baseConfigurationReference = D2DD5E782E2847084CA5444A203D33B2 /* Pods-Loceat-LoceatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -371,7 +492,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +501,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -389,11 +510,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -461,7 +581,7 @@
 		};
 		1A5656E7E4ACCA206084961D615BDC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4506187E2714CFFD489EEB48BDEED9C /* Pods-LoceatTests.debug.xcconfig */;
+			baseConfigurationReference = 76828EBA8C764234038EE323A6F28CE9 /* Pods-LoceatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -497,9 +617,25 @@
 			};
 			name = Debug;
 		};
-		624A3E6065CFF4F60D98FCD64299CB5E /* Release */ = {
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71531FCFD171AD72F2943B3568472C24 /* Pods-Loceat-LoceatUITests.release.xcconfig */;
+			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5025300201DD65DF99CB09BC1C40197A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68DED031634D62A4E5E7D3530E2F061A /* Pods-Loceat-LoceatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -536,9 +672,48 @@
 			};
 			name = Release;
 		};
-		9A42406D9954A329974D8002CB9BA6E5 /* Debug */ = {
+		5A67F01A2DE9166E55B6C5E934175B62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CE0D22B2805E1AA1352467F78B5F7B0 /* Pods-Loceat.debug.xcconfig */;
+			baseConfigurationReference = 81CEF0FC6AD7C924E1B92AE8C7CE818A /* Pods-Loceat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		794A14806C57B05704713EDFFD99D4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98329D791A80810D5633099FA25ACDA8 /* Pods-Loceat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -574,47 +749,26 @@
 			};
 			name = Debug;
 		};
-		B66DDF56EA44AC68AA4EBE6690429E84 /* Debug */ = {
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B94C887A32B891F577CE9E36430F3C27 /* Pods-Loceat-LoceatUITests.debug.xcconfig */;
+			baseConfigurationReference = CC0008749F65B05177801A1B72F2F1EC /* GoogleMaps.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		EF2550100D928E7A1B2F70C8E6659317 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DEC8EB379B43EDD2E9D2DD3CDA6A634 /* Pods-LoceatTests.release.xcconfig */;
+			baseConfigurationReference = 6EBA4C1D285DF6CE880A4740A2478979 /* Pods-LoceatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -714,6 +868,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -723,20 +886,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E51312D8E7EB3C450F51400CD831E0F /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */ = {
+		71146C68845913480D53A8C6CA9B687F /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B66DDF56EA44AC68AA4EBE6690429E84 /* Debug */,
-				624A3E6065CFF4F60D98FCD64299CB5E /* Release */,
+				045470C90388FD8FE40AF9CEBD113B92 /* Debug */,
+				5025300201DD65DF99CB09BC1C40197A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		589F9CA1833A6D3EE82C14549E389859 /* Build configuration list for PBXNativeTarget "Pods-Loceat" */ = {
+		A283C899ACD5E94EE0BB1C437937E113 /* Build configuration list for PBXNativeTarget "Pods-Loceat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A42406D9954A329974D8002CB9BA6E5 /* Debug */,
-				12F6E3DF6E261A73FD9899AC778A9B1D /* Release */,
+				794A14806C57B05704713EDFFD99D4C8 /* Debug */,
+				5A67F01A2DE9166E55B6C5E934175B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
