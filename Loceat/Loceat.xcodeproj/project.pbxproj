@@ -13,6 +13,7 @@
 		D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */; };
 		D56FF6682492BC2C001B284A /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; };
 		D56FF6692492BC2C001B284A /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */; };
 		D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4650D2492AFA40024E6CA /* AppDelegate.swift */; };
 		D5D465152492AFA40024E6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D465132492AFA40024E6CA /* Main.storyboard */; };
 		D5D465172492AFA70024E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D465162492AFA70024E6CA /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.release.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
 		D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewExtensions.swift; sourceTree = "<group>"; };
 		D56FF6672492BC2C001B284A /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D5D4650A2492AFA40024E6CA /* Loceat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loceat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4650D2492AFA40024E6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D465142492AFA40024E6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */,
 				D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */,
+				D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 			files = (
 				D5D465482492B0E50024E6CA /* AppStoryboard.swift in Sources */,
 				D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */,
+				D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */,
 				D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */,
 				D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */,
 				D5D4654C2492B1380024E6CA /* Route.swift in Sources */,

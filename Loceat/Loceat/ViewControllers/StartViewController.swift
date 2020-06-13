@@ -14,6 +14,8 @@ class StartViewController: UIViewController {
     @IBOutlet var mapView: GMSMapView!
     @IBOutlet var bottomView: UIView!
     @IBOutlet var addressLabel: UILabel!
+    @IBOutlet var myLocationView: UIView!
+    @IBOutlet var continueButton: UIButton!
     
     private var locationManager: CLLocationManager?
     private var hasLoadedMap: Bool = false
@@ -43,6 +45,10 @@ class StartViewController: UIViewController {
     
     @IBAction func onContinueTapped(_ sender: Any) {
     }
+    
+    @IBAction func onMyLocationTapped(_ sender: Any) {
+        mapView.centerToMyLocation()
+    }
 }
 
 // MARK: Set Up
@@ -51,6 +57,7 @@ extension StartViewController {
     private func setUp() {
         setUpMap()
         setUpBottomView()
+        setUpMyLocationButton()
     }
     
     private func setUpMap() {
@@ -67,13 +74,14 @@ extension StartViewController {
     private func setUpBottomView() {
         bottomView.layer.cornerRadius = 8
         bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        bottomView.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
-        bottomView.layer.shadowOpacity = 1
-        bottomView.layer.shadowOffset = .zero
-        bottomView.layer.shadowRadius = 4
-        bottomView.layer.rasterizationScale = UIScreen.main.scale
-        bottomView.layer.shouldRasterize = true
-
+        bottomView.addShadow(UIColor.black.withAlphaComponent(0.5))
+        continueButton.layer.cornerRadius = 8
+    }
+    
+    private func setUpMyLocationButton() {
+        myLocationView.layer.cornerRadius = 8
+        myLocationView.addShadow(UIColor.black.withAlphaComponent(0.2))
+        myLocationView.layer.shouldRasterize = true
     }
     
     private func setUpLocationManager() {
@@ -104,5 +112,6 @@ extension StartViewController: CLLocationManagerDelegate {
                          didChangeAuthorization status: CLAuthorizationStatus) {
         guard status == .authorizedWhenInUse else { return }
         mapView.isMyLocationEnabled = true
+        myLocationView.isHidden = false
     }
 }
