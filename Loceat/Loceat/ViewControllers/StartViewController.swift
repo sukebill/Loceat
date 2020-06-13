@@ -74,7 +74,7 @@ extension StartViewController {
     private func setUpBottomView() {
         bottomView.layer.cornerRadius = 8
         bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        bottomView.addShadow(UIColor.black.withAlphaComponent(0.5))
+        bottomView.addShadow(UIColor.black.withAlphaComponent(0.2))
         continueButton.layer.cornerRadius = 8
     }
     
