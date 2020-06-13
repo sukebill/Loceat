@@ -33,11 +33,11 @@ class StartViewController: UIViewController {
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard let update = change,
-            let myLocation = update[NSKeyValueChangeKey.newKey] as? CLLocation else {
-                return
-        }
+            let myLocation = update[NSKeyValueChangeKey.newKey] as? CLLocation else { return }
         myLocationFakeMarker?.position = myLocation.coordinate
-        mapView.selectedMarker = myLocationFakeMarker
+        GMSGeocoder().reverseGeocodeCoordinate(myLocation.coordinate) { [weak addressLabel] (response, error) in
+            addressLabel?.text = response?.firstResult()?.lines?.first ?? "N/A"
+        }
         guard !hasCenteredToLocationAtStartup else { return }
         hasCenteredToLocationAtStartup = true
         mapView.centerTo(myLocation)
