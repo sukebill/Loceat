@@ -15,10 +15,28 @@ class StartViewController: UIViewController {
     
     private var locationManager: CLLocationManager?
     private var hasLoadedMap: Bool = false
+    private var myLocationFakeMarker: GMSMarker?
+    private var hasCenteredToLocationAtStartup: Bool = false
+    
+    deinit {
+       mapView.removeObserver(self, forKeyPath: "myLocation")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard let update = change,
+            let myLocation = update[NSKeyValueChangeKey.newKey] as? CLLocation else {
+                return
+        }
+        myLocationFakeMarker?.position = myLocation.coordinate
+        mapView.selectedMarker = myLocationFakeMarker
+        guard !hasCenteredToLocationAtStartup else { return }
+        hasCenteredToLocationAtStartup = true
+        mapView.centerTo(myLocation)
     }
 }
 
@@ -32,6 +50,12 @@ extension StartViewController {
     private func setUpMap() {
         mapView.camera = .athens
         mapView.delegate = self
+        myLocationFakeMarker =  mapView.addFakeCurrentLocationMarker()
+        mapView.addObserver(self,
+                            forKeyPath: "myLocation",
+                            options: NSKeyValueObservingOptions.new,
+                            context: nil)
+
     }
     
     private func setUpLocationManager() {
@@ -49,6 +73,10 @@ extension StartViewController: GMSMapViewDelegate {
         hasLoadedMap = true
         setUpLocationManager()
     }
+    
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+        return UIImageView(image: UIImage(named: "Place"))
+    }
 }
 
 // MARK: CLLocationManagerDelegate
@@ -58,14 +86,5 @@ extension StartViewController: CLLocationManagerDelegate {
                          didChangeAuthorization status: CLAuthorizationStatus) {
         guard status == .authorizedWhenInUse else { return }
         mapView.isMyLocationEnabled = true
-        if let lastKnown = locationManager?.location {
-            mapView.centerTo(lastKnown)
-        }
-        locationManager?.startMonitoringSignificantLocationChanges()
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let lastOne = locations.last else { return }
-        mapView.centerTo(lastOne)
     }
 }

@@ -27,4 +27,20 @@ extension GMSMapView {
                                               zoom: self.camera.zoom)
         animate(to: camera)
     }
+    
+    func addFakeCurrentLocationMarker() -> GMSMarker {
+        let markerView = UIView()
+        markerView.frame.size = CGSize(width: 1, height: 1)
+        markerView.backgroundColor = .black
+        markerView.clipsToBounds = true
+        let imageView = UIImageView(frame: markerView.bounds)
+        imageView.image = nil
+        markerView.addSubview(imageView)
+        let marker = GMSMarker()
+        marker.iconView = markerView
+        marker.isTappable = false
+        marker.map = self
+        selectedMarker = marker
+        return marker
+    }
 }
