@@ -12,6 +12,8 @@ import CoreLocation
 
 class StartViewController: UIViewController {
     @IBOutlet var mapView: GMSMapView!
+    @IBOutlet var bottomView: UIView!
+    @IBOutlet var addressLabel: UILabel!
     
     private var locationManager: CLLocationManager?
     private var hasLoadedMap: Bool = false
@@ -38,6 +40,9 @@ class StartViewController: UIViewController {
         hasCenteredToLocationAtStartup = true
         mapView.centerTo(myLocation)
     }
+    
+    @IBAction func onContinueTapped(_ sender: Any) {
+    }
 }
 
 // MARK: Set Up
@@ -45,6 +50,7 @@ class StartViewController: UIViewController {
 extension StartViewController {
     private func setUp() {
         setUpMap()
+        setUpBottomView()
     }
     
     private func setUpMap() {
@@ -55,6 +61,18 @@ extension StartViewController {
                             forKeyPath: "myLocation",
                             options: NSKeyValueObservingOptions.new,
                             context: nil)
+
+    }
+    
+    private func setUpBottomView() {
+        bottomView.layer.cornerRadius = 8
+        bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        bottomView.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        bottomView.layer.shadowOpacity = 1
+        bottomView.layer.shadowOffset = .zero
+        bottomView.layer.shadowRadius = 4
+        bottomView.layer.rasterizationScale = UIScreen.main.scale
+        bottomView.layer.shouldRasterize = true
 
     }
     
