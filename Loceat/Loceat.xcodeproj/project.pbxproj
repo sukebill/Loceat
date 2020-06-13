@@ -11,6 +11,8 @@
 		6676508134DC9B46137214B4 /* Pods_LoceatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */; };
 		AAA070F2F0B5E69723015FC0 /* Pods_Loceat_LoceatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */; };
 		D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */; };
+		D56FF6682492BC2C001B284A /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; };
+		D56FF6692492BC2C001B284A /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4650D2492AFA40024E6CA /* AppDelegate.swift */; };
 		D5D465152492AFA40024E6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D465132492AFA40024E6CA /* Main.storyboard */; };
 		D5D465172492AFA70024E6CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D465162492AFA70024E6CA /* Assets.xcassets */; };
@@ -41,6 +43,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D56FF66A2492BC2C001B284A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D56FF6692492BC2C001B284A /* NetworkLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		22879B718EF4E934721C418C /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26407B21B22282F82FCCFB0F /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.debug.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-LoceatTests/Pods-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.release.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
 		D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewExtensions.swift; sourceTree = "<group>"; };
+		D56FF6672492BC2C001B284A /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4650A2492AFA40024E6CA /* Loceat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loceat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4650D2492AFA40024E6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D465142492AFA40024E6CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3ABF08FF0F929BACD73A4C /* Pods_Loceat.framework in Frameworks */,
+				D56FF6682492BC2C001B284A /* NetworkLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +120,7 @@
 		3DCE8224E0E2A9C2BB83B699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D56FF6672492BC2C001B284A /* NetworkLayer.framework */,
 				22879B718EF4E934721C418C /* Pods_Loceat.framework */,
 				8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */,
 				F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */,
@@ -232,6 +251,7 @@
 				D5D465072492AFA40024E6CA /* Frameworks */,
 				D5D465082492AFA40024E6CA /* Resources */,
 				36FEA3246F741C968B558DB4 /* [CP] Copy Pods Resources */,
+				D56FF66A2492BC2C001B284A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -640,13 +660,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPXTTVL944;
 				INFOPLIST_FILE = Loceat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.VA.Loceat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.threenitas.locationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -659,13 +680,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPXTTVL944;
 				INFOPLIST_FILE = Loceat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.VA.Loceat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.threenitas.locationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

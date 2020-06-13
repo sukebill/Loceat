@@ -11,6 +11,7 @@
 		D56FF6592492BBCA001B284A /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FF6582492BBCA001B284A /* NetworkLayerTests.swift */; };
 		D56FF65B2492BBCA001B284A /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D56FF64D2492BBCA001B284A /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D56FF6662492BBEE001B284A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D56FF6652492BBEE001B284A /* Alamofire */; };
+		D56FF66C2492BC80001B284A /* LoceatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FF66B2492BC80001B284A /* LoceatAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 		D56FF6532492BBCA001B284A /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56FF6582492BBCA001B284A /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		D56FF65A2492BBCA001B284A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56FF66B2492BC80001B284A /* LoceatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoceatAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				D56FF64D2492BBCA001B284A /* NetworkLayer.h */,
 				D56FF64E2492BBCA001B284A /* Info.plist */,
+				D56FF66B2492BC80001B284A /* LoceatAPI.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				TargetAttributes = {
 					D56FF6492492BBCA001B284A = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					D56FF6522492BBCA001B284A = {
 						CreatedOnToolsVersion = 11.5;
@@ -203,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56FF66C2492BC80001B284A /* LoceatAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +353,7 @@
 		D56FF65F2492BBCA001B284A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -364,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.VA.NetworkLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +379,7 @@
 		D56FF6602492BBCA001B284A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -396,6 +404,7 @@
 		D56FF6622492BBCA001B284A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,6 +422,7 @@
 		D56FF6632492BBCA001B284A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
