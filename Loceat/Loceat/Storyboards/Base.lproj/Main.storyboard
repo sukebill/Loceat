@@ -103,7 +103,7 @@
                                         </visualEffectView>
                                     </subviews>
                                 </view>
-                                <blurEffect style="systemUltraThinMaterial"/>
+                                <blurEffect style="regular"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -128,6 +128,7 @@
                         <outlet property="addressLabel" destination="Zge-pD-mG1" id="CeP-1r-xIO"/>
                         <outlet property="blurr" destination="dsf-es-KDx" id="c8H-Ot-wjM"/>
                         <outlet property="bottomView" destination="CfC-x8-PPL" id="GNd-CB-rJ7"/>
+                        <outlet property="bottomViewHeight" destination="dmW-6n-8Vf" id="5Hf-P2-hqG"/>
                         <outlet property="continueButton" destination="g4D-Yi-eWj" id="7XY-ci-zHm"/>
                         <outlet property="mapView" destination="Lmt-69-cMk" id="L4J-xi-EZJ"/>
                         <outlet property="myLocationView" destination="Hnx-G2-6BF" id="BeU-nC-Okf"/>
@@ -145,6 +146,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Restaurants Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7g-Vd-JGX">
+                                <rect key="frame" x="110.5" y="441" width="193" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OIu-MF-2Ez">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,11 +211,14 @@
                             <constraint firstAttribute="bottom" secondItem="OIu-MF-2Ez" secondAttribute="bottom" id="Co8-h7-2ho"/>
                             <constraint firstItem="OIu-MF-2Ez" firstAttribute="leading" secondItem="far-8R-HHl" secondAttribute="leading" id="agE-Hg-EaJ"/>
                             <constraint firstItem="far-8R-HHl" firstAttribute="trailing" secondItem="OIu-MF-2Ez" secondAttribute="trailing" id="fyM-rj-J9R"/>
+                            <constraint firstItem="z7g-Vd-JGX" firstAttribute="centerX" secondItem="far-8R-HHl" secondAttribute="centerX" id="hb1-21-HmN"/>
                             <constraint firstItem="OIu-MF-2Ez" firstAttribute="top" secondItem="far-8R-HHl" secondAttribute="top" id="k0w-F5-aPE"/>
+                            <constraint firstItem="z7g-Vd-JGX" firstAttribute="centerY" secondItem="far-8R-HHl" secondAttribute="centerY" id="rCq-sQ-6X8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="far-8R-HHl"/>
                     </view>
                     <connections>
+                        <outlet property="errorMessage" destination="z7g-Vd-JGX" id="CEA-Yo-i4d"/>
                         <outlet property="tableView" destination="OIu-MF-2Ez" id="tfc-Fg-SSn"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantsViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var errorMessage: UILabel!
     
     var viewModel: RestaurantsViewModel!
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
@@ -47,12 +48,28 @@ extension RestaurantsViewController {
     private func loadRestaurants() {
         Loader.show(to: view)
         viewModel.fetchRestaurants { [weak self] (venues, error) in
-            guard error == nil else { return }
-            self?.viewModel.setUpTableData(venues)
-            self?.tableView.reloadData()
             guard let self = self else { return }
             Loader.hide(from: self.view)
+            guard error == nil else {
+                self.showError(error)
+                return
+            }
+            self.viewModel.setUpTableData(venues)
+            self.tableView.reloadData()
         }
+    }
+}
+
+// MARK: Error
+
+extension RestaurantsViewController {
+    private func showNotFoundMessageIfNeeded() {
+        errorMessage.isHidden = viewModel.tableData.count > 0
+        tableView.isHidden = !errorMessage.isHidden
+    }
+    
+    private func showError(_ error: Error?) {
+        showAlert(message: error?.localizedDescription ?? "Something went wrong")
     }
 }
 

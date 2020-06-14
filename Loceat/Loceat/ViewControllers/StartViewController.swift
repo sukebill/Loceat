@@ -17,6 +17,7 @@ class StartViewController: UIViewController {
     @IBOutlet var myLocationView: UIView!
     @IBOutlet var continueButton: UIButton!
     @IBOutlet var blurr: UIVisualEffectView!
+    @IBOutlet var bottomViewHeight: NSLayoutConstraint!
     
     private var locationManager: CLLocationManager?
     private var hasLoadedMap: Bool = false
@@ -54,6 +55,7 @@ class StartViewController: UIViewController {
     
     @IBAction func onMyLocationTapped(_ sender: Any) {
         mapView.centerToMyLocation()
+        mapView.selectedMarker = myLocationFakeMarker
     }
     
     private func onLocationFound(_ location: CLLocationCoordinate2D) {
@@ -88,7 +90,7 @@ extension StartViewController {
                             forKeyPath: "myLocation",
                             options: NSKeyValueObservingOptions.new,
                             context: nil)
-
+        mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: bottomViewHeight.constant, right: 0)
     }
     
     private func setUpBottomView() {
@@ -162,6 +164,10 @@ extension StartViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         return UIImageView(image: UIImage(named: "Place"))
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        mapView.selectedMarker = myLocationFakeMarker
     }
 }
 
