@@ -45,6 +45,9 @@ public extension LoceatAPI {
                     guard let venue = Venue.jsonToDecoder(venueJson) else { continue }
                     venues.append(venue)
                 }
+                venues.sort {
+                    $0.location?.distance ?? 0 < $1.location?.distance ?? 0
+                }
                 completionHandler(venues, nil)
             case let .failure(error):
                 completionHandler([], error)

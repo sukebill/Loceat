@@ -30,6 +30,7 @@ extension RestaurantsViewController {
     private func setUp() {
         title = viewModel.address?.thoroughfare
         setUpTable()
+        loadRestaurants()
     }
     
     private func setUpTable() {
@@ -37,6 +38,14 @@ extension RestaurantsViewController {
         tableView.dataSource = self
         let bottomSafeArea = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomSafeArea, right: 0)
+    }
+    
+    private func loadRestaurants() {
+        viewModel.fetchRestaurants { [weak self] (venues, error) in
+            guard error == nil else { return }
+            self?.viewModel.setUpTableData(venues)
+            self?.tableView.reloadData()
+        }
     }
 }
 
@@ -68,17 +77,18 @@ extension RestaurantsViewController: UITableViewDelegate {
 
 extension RestaurantsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return viewModel.tableData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return viewModel.tableData[section].restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell",
-                                                 for: indexPath)
-        
+                                                 for: indexPath) as! RestaurantTableViewCell
+        let restaurant = viewModel.tableData[indexPath.section].restaurants[indexPath.row]
+        cell.setUp(name: restaurant.name, distance: restaurant.location?.distanceInKM ?? "")
         return cell
     }
 }
