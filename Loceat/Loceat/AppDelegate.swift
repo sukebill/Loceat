@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navCtrl = UINavigationController(rootViewController: Route.start.viewController)
+        let navCtrl = LoceatNavigationController(rootViewController: Route.start.viewController)
         navCtrl.setNavigationBarHidden(true, animated: false)
         navCtrl.delegate = self
         window = UIWindow(frame: UIScreen.main.bounds)
