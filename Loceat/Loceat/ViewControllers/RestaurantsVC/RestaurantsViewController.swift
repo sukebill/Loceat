@@ -31,6 +31,7 @@ class RestaurantsViewController: UIViewController {
 extension RestaurantsViewController {
     private func setUp() {
         title = ""
+        overrideBack()
         setUpTable()
         loadRestaurants()
     }
