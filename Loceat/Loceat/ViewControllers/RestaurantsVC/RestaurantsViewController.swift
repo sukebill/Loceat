@@ -21,6 +21,7 @@ class RestaurantsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
@@ -28,7 +29,7 @@ class RestaurantsViewController: UIViewController {
 
 extension RestaurantsViewController {
     private func setUp() {
-        title = viewModel.address?.thoroughfare
+        title = ""
         setUpTable()
         loadRestaurants()
     }
@@ -73,10 +74,6 @@ extension RestaurantsViewController: UITableViewDelegate {
                       iconUrl: viewModel.tableData[section].category.icon.url32)
         return header
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Do something on selection
-    }
 }
 
 // MARK: UI Table View Datasource
@@ -96,6 +93,15 @@ extension RestaurantsViewController: UITableViewDataSource {
         let restaurant = viewModel.tableData[indexPath.section].restaurants[indexPath.row]
         cell.setUp(name: restaurant.name, distance: restaurant.location?.distanceInKM ?? "")
         return cell
+    }
+}
+
+// MARK: UI ScrollView Delegate
+
+extension RestaurantsViewController {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let yOffset = scrollView.contentOffset.y
+        title = yOffset > 48 ? viewModel.address?.thoroughfare : ""
     }
 }
 
