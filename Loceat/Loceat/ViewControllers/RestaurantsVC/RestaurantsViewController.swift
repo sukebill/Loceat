@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantsViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var errorMessage: UILabel!
     
     var viewModel: RestaurantsViewModel!
     override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
@@ -21,6 +22,7 @@ class RestaurantsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
@@ -28,39 +30,69 @@ class RestaurantsViewController: UIViewController {
 
 extension RestaurantsViewController {
     private func setUp() {
-        title = viewModel.address?.thoroughfare
+        title = ""
         setUpTable()
+        loadRestaurants()
     }
     
     private func setUpTable() {
         tableView.delegate = self
         tableView.dataSource = self
         let bottomSafeArea = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: bottomSafeArea, right: 0)
+        tableView.contentInset = UIEdgeInsets(top: 24, left: 0, bottom: bottomSafeArea, right: 0)
+        let nibName = UINib(nibName: "RestaurantCategoryTableHeader", bundle: nil)
+        tableView.register(nibName,
+                           forHeaderFooterViewReuseIdentifier: "RestaurantCategoryTableHeader")
+    }
+    
+    private func loadRestaurants() {
+        Loader.show(to: view)
+        viewModel.fetchRestaurants { [weak self] (venues, error) in
+            guard let self = self else { return }
+            Loader.hide(from: self.view)
+            guard error == nil else {
+                self.showError(error)
+                return
+            }
+            self.viewModel.setUpTableData(venues)
+            self.tableView.reloadData()
+        }
+    }
+}
+
+// MARK: Error
+
+extension RestaurantsViewController {
+    private func showNotFoundMessageIfNeeded() {
+        errorMessage.isHidden = viewModel.tableData.count > 0
+        tableView.isHidden = !errorMessage.isHidden
+    }
+    
+    private func showError(_ error: Error?) {
+        showAlert(message: error?.localizedDescription ?? "Something went wrong")
     }
 }
 
 // MARK: UI Table View Delegate
 
 extension RestaurantsViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return 28
-//    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section == 0 ? 136 : 88
+    }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 28))
-//        view.backgroundColor = .black
-//        return view
-//    }
-//
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 28))
-//        view.backgroundColor = .black
-//        return view
-//    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude
+    }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Do something on selection
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "RestaurantCategoryTableHeader") as? RestaurantCategoryTableHeader
+        let address = section == 0 ? viewModel.addressHeaderText : nil
+        let city = section == 0 ? viewModel.cityHeaderText : nil
+        header?.setUp(address: address,
+                      city: city,
+                      category: viewModel.tableData[section].category.shortName,
+                      iconUrl: viewModel.tableData[section].category.icon.url32)
+        return header
     }
 }
 
@@ -68,18 +100,28 @@ extension RestaurantsViewController: UITableViewDelegate {
 
 extension RestaurantsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return viewModel.tableData.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return viewModel.tableData[section].restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCell",
-                                                 for: indexPath)
-        
+                                                 for: indexPath) as! RestaurantTableViewCell
+        let restaurant = viewModel.tableData[indexPath.section].restaurants[indexPath.row]
+        cell.setUp(name: restaurant.name, distance: restaurant.location?.distanceInKM ?? "")
         return cell
+    }
+}
+
+// MARK: UI ScrollView Delegate
+
+extension RestaurantsViewController {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let yOffset = scrollView.contentOffset.y
+        title = yOffset > 48 ? viewModel.address?.thoroughfare : ""
     }
 }
 

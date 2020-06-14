@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,11 @@
 		D5D465482492B0E50024E6CA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D465472492B0E50024E6CA /* AppStoryboard.swift */; };
 		D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */; };
 		D5D4654C2492B1380024E6CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4654B2492B1380024E6CA /* Route.swift */; };
+		D5F4790024965A3100F8D892 /* RestaurantCategoryTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */; };
+		D5F4790224965EE900F8D892 /* RestaurantCategoryTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */; };
+		D5F4790B2496681800F8D892 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D5F4790A2496681800F8D892 /* Kingfisher */; };
+		D5F4790D24966EE900F8D892 /* LoceatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790C24966EE900F8D892 /* LoceatNavigationController.swift */; };
+		D5F4790F24966F6900F8D892 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790E24966F6900F8D892 /* Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,10 @@
 		D5D465472492B0E50024E6CA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D5D4654B2492B1380024E6CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCategoryTableHeader.xib; sourceTree = "<group>"; };
+		D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategoryTableHeader.swift; sourceTree = "<group>"; };
+		D5F4790C24966EE900F8D892 /* LoceatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoceatNavigationController.swift; sourceTree = "<group>"; };
+		D5F4790E24966F6900F8D892 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F4790B2496681800F8D892 /* Kingfisher in Frameworks */,
 				3A3ABF08FF0F929BACD73A4C /* Pods_Loceat.framework in Frameworks */,
 				D56FF6682492BC2C001B284A /* NetworkLayer.framework in Frameworks */,
 			);
@@ -158,9 +168,9 @@
 		D571320224956105004E4C99 /* RestaurantsVC */ = {
 			isa = PBXGroup;
 			children = (
-				D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */,
 				D571320024955FBA004E4C99 /* RestaurantsViewModel.swift */,
-				D571320324956128004E4C99 /* RestaurantTableViewCell.swift */,
+				D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */,
+				D5F47903249660E400F8D892 /* TableView */,
 			);
 			path = RestaurantsVC;
 			sourceTree = "<group>";
@@ -190,7 +200,7 @@
 		D5D4650C2492AFA40024E6CA /* Loceat */ = {
 			isa = PBXGroup;
 			children = (
-				D5D4653E2492B0620024E6CA /* Entities */,
+				D5D4653E2492B0620024E6CA /* Utilities */,
 				D5D465422492B0810024E6CA /* Storyboards */,
 				D5D4653F2492B06E0024E6CA /* ViewControllers */,
 				D5D465412492B07D0024E6CA /* Routing */,
@@ -220,11 +230,12 @@
 			path = LoceatUITests;
 			sourceTree = "<group>";
 		};
-		D5D4653E2492B0620024E6CA /* Entities */ = {
+		D5D4653E2492B0620024E6CA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D5F4790E24966F6900F8D892 /* Loader.swift */,
 			);
-			path = Entities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D5D4653F2492B06E0024E6CA /* ViewControllers */ = {
@@ -253,6 +264,7 @@
 				D5D465452492B0C20024E6CA /* RouteProtocol.swift */,
 				D5D465472492B0E50024E6CA /* AppStoryboard.swift */,
 				D5D4654B2492B1380024E6CA /* Route.swift */,
+				D5F4790C24966EE900F8D892 /* LoceatNavigationController.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -264,6 +276,16 @@
 				D5D465132492AFA40024E6CA /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5F47903249660E400F8D892 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D571320324956128004E4C99 /* RestaurantTableViewCell.swift */,
+				D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */,
+				D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +308,9 @@
 			dependencies = (
 			);
 			name = Loceat;
+			packageProductDependencies = (
+				D5F4790A2496681800F8D892 /* Kingfisher */,
+			);
 			productName = Loceat;
 			productReference = D5D4650A2492AFA40024E6CA /* Loceat.app */;
 			productType = "com.apple.product-type.application";
@@ -364,6 +389,9 @@
 				Base,
 			);
 			mainGroup = D5D465012492AFA40024E6CA;
+			packageReferences = (
+				D5F479092496681800F8D892 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D5D4650B2492AFA40024E6CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -382,6 +410,7 @@
 			files = (
 				D5D4651A2492AFA70024E6CA /* LaunchScreen.storyboard in Resources */,
 				D5D465172492AFA70024E6CA /* Assets.xcassets in Resources */,
+				D5F4790024965A3100F8D892 /* RestaurantCategoryTableHeader.xib in Resources */,
 				D5D465152492AFA40024E6CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,14 +611,17 @@
 				D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */,
 				D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */,
 				D571320424956128004E4C99 /* RestaurantTableViewCell.swift in Sources */,
+				D5F4790224965EE900F8D892 /* RestaurantCategoryTableHeader.swift in Sources */,
 				D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */,
 				D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */,
 				D5D4654C2492B1380024E6CA /* Route.swift in Sources */,
+				D5F4790D24966EE900F8D892 /* LoceatNavigationController.swift in Sources */,
 				D5D465462492B0C20024E6CA /* RouteProtocol.swift in Sources */,
 				D571320124955FBA004E4C99 /* RestaurantsViewModel.swift in Sources */,
 				D5713207249567B0004E4C99 /* UINavigationBarExtensions.swift in Sources */,
 				D57131FF24955F22004E4C99 /* RestaurantsViewController.swift in Sources */,
 				D5D465442492B0A80024E6CA /* StartViewController.swift in Sources */,
+				D5F4790F24966F6900F8D892 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,14 +796,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPXTTVL944;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Loceat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.threenitas.locationExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VA.loceat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -784,14 +816,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QPXTTVL944;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Loceat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.threenitas.locationExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VA.loceat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -922,6 +954,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5F479092496681800F8D892 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5F4790A2496681800F8D892 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5F479092496681800F8D892 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5D465022492AFA40024E6CA /* Project object */;
 }

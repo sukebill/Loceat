@@ -18,6 +18,8 @@ public class LoceatAPI {
     }
 }
 
+// MARK: Restaurants
+
 public extension LoceatAPI {
     func fetchRestaurants(lat: Double,
                           long: Double,
@@ -44,6 +46,9 @@ public extension LoceatAPI {
                 for venueJson in venuesJSON {
                     guard let venue = Venue.jsonToDecoder(venueJson) else { continue }
                     venues.append(venue)
+                }
+                venues.sort {
+                    $0.location?.distance ?? 0 < $1.location?.distance ?? 0
                 }
                 completionHandler(venues, nil)
             case let .failure(error):

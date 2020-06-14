@@ -9,9 +9,12 @@
 import Foundation
 
 public struct Venue: Codable {
-    let name: String?
-    let location: Location?
-    let categories: [Category]?
+    public let name: String?
+    public let location: Location?
+    public let categories: [Category]?
+    public var primaryCategory: Category? {
+        categories?.lazy.filter { $0.isPrimary }.first ?? categories?.first
+    }
     
     enum CodingKeys: String, CodingKey {
         case name = "name"

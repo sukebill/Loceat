@@ -25,3 +25,9 @@ public struct Category: Codable {
         case icon = "icon"
     }
 }
+
+extension Category: Equatable {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.id == rhs.id
+    }
+}

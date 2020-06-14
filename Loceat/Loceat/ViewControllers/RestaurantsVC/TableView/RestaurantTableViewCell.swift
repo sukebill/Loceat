@@ -12,7 +12,7 @@ class RestaurantTableViewCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var distanceLabel: UILabel!
     
-    func setUp(with name: String, and distance: String) {
+    func setUp(name: String?, distance: String) {
         nameLabel.text = name
         distanceLabel.text = distance
     }

@@ -13,22 +13,64 @@ import NetworkLayer
 
 struct RestaurantsViewModel {
     let address: GMSAddress?
+    var addressHeaderText: String? {
+        address?.thoroughfare?.appending(",")
+    }
+    var cityHeaderText: String? {
+        let subLocality = address?.subLocality?.appending(", ") ?? ""
+        let locality = address?.locality?.appending(", ") ?? ""
+        let city = address?.administrativeArea?.appending(" ") ?? ""
+        let postalCode = address?.postalCode ?? ""
+        return subLocality + locality + city + postalCode
+    }
     let coordinates: CLLocationCoordinate2D
+    typealias SectionData = (category: NetworkLayer.Category, restaurants: [Venue])
+    var tableData: [SectionData] = []
     
     init(address: GMSAddress?, coordinates: CLLocationCoordinate2D) {
         self.address = address
         self.coordinates = coordinates
-        fetchRestaurants()
+    }
+}
+
+// MARK: Mutations
+
+extension RestaurantsViewModel {
+    mutating func setUpTableData(_ venues: [Venue]) {
+        tableData = []
+        for venue in venues {
+            guard let category = venue.primaryCategory else { continue }
+            tableData.append(venue: venue, inCategory: category)
+        }
     }
 }
 
 // MARK: Api Calls
 
 extension RestaurantsViewModel {
-    func fetchRestaurants() {
+    func fetchRestaurants(onCompletion: @escaping ([Venue], Error?) -> Void) {
         LoceatAPI.shared.fetchRestaurants(lat: coordinates.latitude,
                                           long: coordinates.longitude) { (venues, error) in
-                                            debugPrint(venues)
+                                            onCompletion(venues, error)
+        }
+    }
+}
+
+extension Array where Element == RestaurantsViewModel.SectionData {
+    func contains(category: NetworkLayer.Category) -> Bool {
+        contains { $0.category == category }
+    }
+    
+    fileprivate mutating func append(venue: Venue,
+                                     inCategory category: NetworkLayer.Category) {
+        
+        guard contains(category: category) else {
+            append((category, [venue]))
+            return
+        }
+        for index in 0..<count where self[index].category == category {
+            self[index].restaurants.append(venue)
+            return
         }
     }
 }

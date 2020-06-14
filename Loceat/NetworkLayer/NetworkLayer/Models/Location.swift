@@ -9,15 +9,22 @@
 import Foundation
 
 public struct Location: Codable {
-    let address: String?
-    let city: String?
-    let distance: Int?
-    let postalCode: String?
-    let crossStreet: String?
-    let country: String?
-    let formattedAddress: [String]
-    let lat: Double
-    let long: Double
+    public let address: String?
+    public let city: String?
+    public let distance: Int?
+    public let postalCode: String?
+    public let crossStreet: String?
+    public let country: String?
+    public let formattedAddress: [String]
+    public let lat: Double
+    public let long: Double
+    public var distanceInKM: String {
+        guard let distance = distance else {
+            return ""
+        }
+        let kilometers: Double = (Double(distance) / 1000.0).roundTo(places: 1)
+        return kilometers.string + " km"
+    }
     
     enum CodingKeys: String, CodingKey {
         case address = "address"

@@ -11,8 +11,8 @@ import Foundation
 public struct Icon: Codable {
     let prefix: String
     let suffix: String
-    public var url: String {
-        prefix + suffix
+    public var url32: String {
+        prefix + "32" + suffix
     }
     
     enum CodingKeys: String, CodingKey {
