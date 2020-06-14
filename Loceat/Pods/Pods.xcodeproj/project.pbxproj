@@ -1,0 +1,1324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1AB03F8C7C500999E963A9C83BC3EDBD /* FoursquareAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA7EA612F359CC0264AE70F9D5F35B /* FoursquareAuthViewController.swift */; };
+		1F496A104AD8E40EAC0EECB013422B06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		246B83E1D72DA51557C86034861CF91C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4864DE986EA5C36DA0C5B3E51300FFA2 /* Pods-Loceat-LoceatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C6D1B9F323D742F5D9BF528BC28019 /* Pods-Loceat-LoceatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53978168EA95F4F6107FD40CD1AEBBD1 /* FoursquareAPIClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC875CE8DE6DFD2B7BD71DA8F11D66E /* FoursquareAPIClient-dummy.m */; };
+		62BC289B0A23B470FAAA5D7E3F1C4624 /* Pods-NetworkLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CACF599A0C0D68438A6A67E0A10B86B /* Pods-NetworkLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E988628FA76AF1FB1A4EF6B234C1A2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		71662D2855678C6E47F4B71370411C97 /* FoursquareAuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2EC189535A77C9BED4B7539B067ABF /* FoursquareAuthClient.swift */; };
+		75DA8B808996CFEAA7F1303DB2A8279A /* FoursquareAPIClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDBE376E53DB87B6716A0D2B3A8E6CC /* FoursquareAPIClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEEF73CF1222403C2BB7F62DD3A3209 /* FoursquareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F4BD0BFBED8150FE202DE0DCEB8D9 /* FoursquareAPIClient.swift */; };
+		9CF5FF20222BDF6DCFB1F602112D497B /* Pods-Loceat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBAEDB978DBC16BC20333A85FDB22054 /* Pods-Loceat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E42F1868F0ADF74D3449BB6674E311 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A4AF5C2321B057231CBE8F3209686906 /* Pods-Loceat-LoceatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 678E70DBA48045E6E6E2AF38902BA671 /* Pods-Loceat-LoceatTests-dummy.m */; };
+		DC9BC32C34B3B304348A59A059F641C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E1F26B0E918089D3AB5296924711B5F9 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB0E84432A2D6A8C9B1CB6D82DC7 /* Pods-Loceat-LoceatUITests-dummy.m */; };
+		E34DDF027085DC521B3599884F617A9A /* Pods-Loceat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3857516F24F31B3A6F86DFEE324A4023 /* Pods-Loceat-dummy.m */; };
+		EA4C486CCF522349DCA540D8A46F8831 /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBFCA126C5DAE4064378C0419F4B1C0 /* Pods-Loceat-LoceatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FD78EEAEB763574608D048A18B3CDA /* Pods-NetworkLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7566F1D055830AFF0AA8A1682DE377 /* Pods-NetworkLayer-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68E2B4D0D80331957577A39554521CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B;
+			remoteInfo = FoursquareAPIClient;
+		};
+		6A9C179F654C7651018FB42B33833A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		746FB1993776DC6AAB7DAA30E065EEB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		7ED05917DCD829620DA1F5F14583D26B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B;
+			remoteInfo = FoursquareAPIClient;
+		};
+		B7A2107AE35F5B9945E441259BA69A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B;
+			remoteInfo = FoursquareAPIClient;
+		};
+		CD147BE7AA2A722B46A12EB250783DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B;
+			remoteInfo = FoursquareAPIClient;
+		};
+		E8C813E4D7E9E6700E14EF5584EBE214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06FFE2BBD854D1E3ED614CD5B5995085 /* Pods-Loceat-LoceatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatUITests-resources.sh"; sourceTree = "<group>"; };
+		0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat.framework; path = "Pods-Loceat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FoursquareAPIClient.framework; path = FoursquareAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2E89EB11BA30A94772A083B66F0830 /* FoursquareAPIClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FoursquareAPIClient-Info.plist"; sourceTree = "<group>"; };
+		0E45BB0E84432A2D6A8C9B1CB6D82DC7 /* Pods-Loceat-LoceatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-LoceatUITests-dummy.m"; sourceTree = "<group>"; };
+		0E84684E5B77D572AF453E18094B6935 /* Pods-Loceat-LoceatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1062C1F13D1C3F136F65C9FA2B4FFAC2 /* Pods-NetworkLayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkLayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16C6D1B9F323D742F5D9BF528BC28019 /* Pods-Loceat-LoceatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-LoceatTests-umbrella.h"; sourceTree = "<group>"; };
+		1EDBE376E53DB87B6716A0D2B3A8E6CC /* FoursquareAPIClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoursquareAPIClient-umbrella.h"; sourceTree = "<group>"; };
+		2292AB2E4A390FFF9FAC5D7855B85C39 /* Pods-NetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
+		2C6E27F7E7F44480CE7F7E0B78AB64D7 /* Pods-Loceat-LoceatUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-Info.plist"; sourceTree = "<group>"; };
+		2DDDEA922F9E93D598C1B6B431F7BE05 /* Pods-Loceat-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		300E99DFE21EEDFD39282636CF012B83 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3857516F24F31B3A6F86DFEE324A4023 /* Pods-Loceat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-dummy.m"; sourceTree = "<group>"; };
+		4CACF599A0C0D68438A6A67E0A10B86B /* Pods-NetworkLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkLayer-umbrella.h"; sourceTree = "<group>"; };
+		53CC97C4343B91245B5B637A6BC7977C /* Pods-Loceat-LoceatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5477EE51A4BC7061DF76712BA023C201 /* Pods-NetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
+		5BD22EB8281B8E10803F8EB037570B83 /* Pods-Loceat-LoceatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat-LoceatUITests.modulemap"; sourceTree = "<group>"; };
+		5CC875CE8DE6DFD2B7BD71DA8F11D66E /* FoursquareAPIClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FoursquareAPIClient-dummy.m"; sourceTree = "<group>"; };
+		678E70DBA48045E6E6E2AF38902BA671 /* Pods-Loceat-LoceatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-LoceatTests-dummy.m"; sourceTree = "<group>"; };
+		6C1888B33AF4F8122C62259C61C3C10F /* Pods-Loceat-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D42EBC7EE372EA6685685CDF96705CD /* Pods-Loceat-LoceatTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatTests-frameworks.sh"; sourceTree = "<group>"; };
+		6D7566F1D055830AFF0AA8A1682DE377 /* Pods-NetworkLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkLayer-dummy.m"; sourceTree = "<group>"; };
+		6FAD59C3E3D3FC5B010E75C7AC4EE85C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		724D053637F19A63BEFD0BD3120CF514 /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
+		753421A5E6D61AA09C904E063F44FDD6 /* Pods-Loceat-LoceatTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatTests-resources.sh"; sourceTree = "<group>"; };
+		7576E1D84DC2CD9584D777AC94314A50 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7ACA7EA612F359CC0264AE70F9D5F35B /* FoursquareAuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAuthViewController.swift; path = FoursquareAPIClient/FoursquareAuthViewController.swift; sourceTree = "<group>"; };
+		7B86AB04DF1FBEB19FBA6006341430BB /* Pods-Loceat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FD0ED772AF21C663DF8C79B8C8FD716 /* Pods-Loceat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat.modulemap"; sourceTree = "<group>"; };
+		838F4BD0BFBED8150FE202DE0DCEB8D9 /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAPIClient.swift; path = FoursquareAPIClient/FoursquareAPIClient.swift; sourceTree = "<group>"; };
+		892ED77206A630AF2F895001928623E2 /* Pods-Loceat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-resources.sh"; sourceTree = "<group>"; };
+		8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat_LoceatUITests.framework; path = "Pods-Loceat-LoceatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE6FAD23621ED7C7EE066267BC2AAA7 /* FoursquareAPIClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FoursquareAPIClient.modulemap; sourceTree = "<group>"; };
+		9C1B3F14D1804A10EAE4931F6FC130C0 /* FoursquareAPIClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoursquareAPIClient.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA1CDDB37FEC7D338743039FD641D3E /* Pods-Loceat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-frameworks.sh"; sourceTree = "<group>"; };
+		A628499103D3A75C6AFA0E5A9D17D82A /* FoursquareAPIClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoursquareAPIClient-prefix.pch"; sourceTree = "<group>"; };
+		C225E875C6F67CDBD78A6E79B56F275C /* Pods-NetworkLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetworkLayer.modulemap"; sourceTree = "<group>"; };
+		C6B8C57D882AD57FA7B6BFF2840BB85C /* Pods_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NetworkLayer.framework; path = "Pods-NetworkLayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77F9978BDBE8E0EBA03CEAEC5CADD01 /* Pods-Loceat-LoceatTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatTests-Info.plist"; sourceTree = "<group>"; };
+		CD0601A7F55E275F00CB1D0E27E95849 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-LoceatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CEB6394413A8AF130B087BAFB46E9784 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		D56884BD16B3CC1A247D701CFD1A67F3 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat_LoceatTests.framework; path = "Pods-Loceat-LoceatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7669A52D849A39C7E26056FCBC0E717 /* Pods-Loceat-LoceatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat-LoceatTests.modulemap"; sourceTree = "<group>"; };
+		DD2EC189535A77C9BED4B7539B067ABF /* FoursquareAuthClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAuthClient.swift; path = FoursquareAPIClient/FoursquareAuthClient.swift; sourceTree = "<group>"; };
+		DEB93656D11DF0E070D1669766C7E1DE /* Pods-Loceat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-Info.plist"; sourceTree = "<group>"; };
+		E0761014BD3F44597E0313168DCAED1F /* Pods-Loceat-LoceatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E09395875DD2FC599897ABB9C344B864 /* Pods-Loceat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E19C69226F4FD07127009E3F21F5BA88 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		E276FB8A0B468BC2315D768941984B3A /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E597CECCAABF3AA1E55315D45F3C2446 /* Pods-NetworkLayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkLayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC80A02FB69D4EC42FB34DBF1D812483 /* Pods-NetworkLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkLayer-Info.plist"; sourceTree = "<group>"; };
+		ED2F881E0029C22CFFE42A286E7A941C /* Pods-Loceat-LoceatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-LoceatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF72BC82D3FC21F65F856E157885FB51 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FBAEDB978DBC16BC20333A85FDB22054 /* Pods-Loceat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-umbrella.h"; sourceTree = "<group>"; };
+		FCBFCA126C5DAE4064378C0419F4B1C0 /* Pods-Loceat-LoceatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Loceat-LoceatUITests-umbrella.h"; sourceTree = "<group>"; };
+		FEF0D19D11AB0526BDE2353E2AB18834 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200F9766DBCAD373B7913C9DA5E04702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246B83E1D72DA51557C86034861CF91C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D703F4F96693161874DC4C06914B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F496A104AD8E40EAC0EECB013422B06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F16F52647514D4B149D633AEA7CA07C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E988628FA76AF1FB1A4EF6B234C1A2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BF9E6637BA167F6F21E39BB275D1F3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9BC32C34B3B304348A59A059F641C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5770EDB2970D6559386FC4ED61253EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E42F1868F0ADF74D3449BB6674E311 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0029B2181E15D7E668A1DC88245B8151 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3C2B04918C26F46B431A007232CE80FE /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		1E246791E542FD997D7B72605FE66228 /* FoursquareAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				838F4BD0BFBED8150FE202DE0DCEB8D9 /* FoursquareAPIClient.swift */,
+				DD2EC189535A77C9BED4B7539B067ABF /* FoursquareAuthClient.swift */,
+				7ACA7EA612F359CC0264AE70F9D5F35B /* FoursquareAuthViewController.swift */,
+				3E8854D285EA2F116A5A96EDA81E7C3F /* Support Files */,
+			);
+			name = FoursquareAPIClient;
+			path = FoursquareAPIClient;
+			sourceTree = "<group>";
+		};
+		39A49D9233805E904A6F7B6BF6A9A8C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA1F4BB6863F24C909E1F311212E4CD4 /* Pods-Loceat */,
+				BD45FF1DFCD4A2222E458FA6B431170D /* Pods-Loceat-LoceatTests */,
+				C6EC7790F1D8600827BF8814C16EE326 /* Pods-Loceat-LoceatUITests */,
+				F70D5872483A38E0AF90BA576D0DC810 /* Pods-NetworkLayer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C2B04918C26F46B431A007232CE80FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB6394413A8AF130B087BAFB46E9784 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E8854D285EA2F116A5A96EDA81E7C3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BE6FAD23621ED7C7EE066267BC2AAA7 /* FoursquareAPIClient.modulemap */,
+				9C1B3F14D1804A10EAE4931F6FC130C0 /* FoursquareAPIClient.xcconfig */,
+				5CC875CE8DE6DFD2B7BD71DA8F11D66E /* FoursquareAPIClient-dummy.m */,
+				0D2E89EB11BA30A94772A083B66F0830 /* FoursquareAPIClient-Info.plist */,
+				A628499103D3A75C6AFA0E5A9D17D82A /* FoursquareAPIClient-prefix.pch */,
+				1EDBE376E53DB87B6716A0D2B3A8E6CC /* FoursquareAPIClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FoursquareAPIClient";
+			sourceTree = "<group>";
+		};
+		480F8D8CD2EC0B3F51ADF4D490A7D88A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */,
+				0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */,
+				D56884BD16B3CC1A247D701CFD1A67F3 /* Pods_Loceat_LoceatTests.framework */,
+				8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */,
+				C6B8C57D882AD57FA7B6BFF2840BB85C /* Pods_NetworkLayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FAA8CEBC4E0453143BECBE2877D3324 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				FF9382C84404A90CCF001961CA4B8780 /* Frameworks */,
+				82EB131C29CD84D095B933773E249462 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		82EB131C29CD84D095B933773E249462 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEF0D19D11AB0526BDE2353E2AB18834 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB7F5040A5D1D65CCE2576149BA6411E /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				0029B2181E15D7E668A1DC88245B8151 /* Base */,
+				5FAA8CEBC4E0453143BECBE2877D3324 /* Maps */,
+				D2FC534B737C8B6DDD8C87EE6B3E7C49 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		BD45FF1DFCD4A2222E458FA6B431170D /* Pods-Loceat-LoceatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7669A52D849A39C7E26056FCBC0E717 /* Pods-Loceat-LoceatTests.modulemap */,
+				ED2F881E0029C22CFFE42A286E7A941C /* Pods-Loceat-LoceatTests-acknowledgements.markdown */,
+				0E84684E5B77D572AF453E18094B6935 /* Pods-Loceat-LoceatTests-acknowledgements.plist */,
+				678E70DBA48045E6E6E2AF38902BA671 /* Pods-Loceat-LoceatTests-dummy.m */,
+				6D42EBC7EE372EA6685685CDF96705CD /* Pods-Loceat-LoceatTests-frameworks.sh */,
+				C77F9978BDBE8E0EBA03CEAEC5CADD01 /* Pods-Loceat-LoceatTests-Info.plist */,
+				753421A5E6D61AA09C904E063F44FDD6 /* Pods-Loceat-LoceatTests-resources.sh */,
+				16C6D1B9F323D742F5D9BF528BC28019 /* Pods-Loceat-LoceatTests-umbrella.h */,
+				2DDDEA922F9E93D598C1B6B431F7BE05 /* Pods-Loceat-LoceatTests.debug.xcconfig */,
+				6C1888B33AF4F8122C62259C61C3C10F /* Pods-Loceat-LoceatTests.release.xcconfig */,
+			);
+			name = "Pods-Loceat-LoceatTests";
+			path = "Target Support Files/Pods-Loceat-LoceatTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C6EC7790F1D8600827BF8814C16EE326 /* Pods-Loceat-LoceatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BD22EB8281B8E10803F8EB037570B83 /* Pods-Loceat-LoceatUITests.modulemap */,
+				CD0601A7F55E275F00CB1D0E27E95849 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */,
+				7576E1D84DC2CD9584D777AC94314A50 /* Pods-Loceat-LoceatUITests-acknowledgements.plist */,
+				0E45BB0E84432A2D6A8C9B1CB6D82DC7 /* Pods-Loceat-LoceatUITests-dummy.m */,
+				E0761014BD3F44597E0313168DCAED1F /* Pods-Loceat-LoceatUITests-frameworks.sh */,
+				2C6E27F7E7F44480CE7F7E0B78AB64D7 /* Pods-Loceat-LoceatUITests-Info.plist */,
+				06FFE2BBD854D1E3ED614CD5B5995085 /* Pods-Loceat-LoceatUITests-resources.sh */,
+				FCBFCA126C5DAE4064378C0419F4B1C0 /* Pods-Loceat-LoceatUITests-umbrella.h */,
+				53CC97C4343B91245B5B637A6BC7977C /* Pods-Loceat-LoceatUITests.debug.xcconfig */,
+				E276FB8A0B468BC2315D768941984B3A /* Pods-Loceat-LoceatUITests.release.xcconfig */,
+			);
+			name = "Pods-Loceat-LoceatUITests";
+			path = "Target Support Files/Pods-Loceat-LoceatUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FB9DE5335D07E4203A02501133157915 /* Pods */,
+				480F8D8CD2EC0B3F51ADF4D490A7D88A /* Products */,
+				39A49D9233805E904A6F7B6BF6A9A8C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2FC534B737C8B6DDD8C87EE6B3E7C49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E19C69226F4FD07127009E3F21F5BA88 /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		EA1F4BB6863F24C909E1F311212E4CD4 /* Pods-Loceat */ = {
+			isa = PBXGroup;
+			children = (
+				7FD0ED772AF21C663DF8C79B8C8FD716 /* Pods-Loceat.modulemap */,
+				E09395875DD2FC599897ABB9C344B864 /* Pods-Loceat-acknowledgements.markdown */,
+				7B86AB04DF1FBEB19FBA6006341430BB /* Pods-Loceat-acknowledgements.plist */,
+				3857516F24F31B3A6F86DFEE324A4023 /* Pods-Loceat-dummy.m */,
+				9DA1CDDB37FEC7D338743039FD641D3E /* Pods-Loceat-frameworks.sh */,
+				DEB93656D11DF0E070D1669766C7E1DE /* Pods-Loceat-Info.plist */,
+				892ED77206A630AF2F895001928623E2 /* Pods-Loceat-resources.sh */,
+				FBAEDB978DBC16BC20333A85FDB22054 /* Pods-Loceat-umbrella.h */,
+				724D053637F19A63BEFD0BD3120CF514 /* Pods-Loceat.debug.xcconfig */,
+				300E99DFE21EEDFD39282636CF012B83 /* Pods-Loceat.release.xcconfig */,
+			);
+			name = "Pods-Loceat";
+			path = "Target Support Files/Pods-Loceat";
+			sourceTree = "<group>";
+		};
+		F70D5872483A38E0AF90BA576D0DC810 /* Pods-NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C225E875C6F67CDBD78A6E79B56F275C /* Pods-NetworkLayer.modulemap */,
+				1062C1F13D1C3F136F65C9FA2B4FFAC2 /* Pods-NetworkLayer-acknowledgements.markdown */,
+				E597CECCAABF3AA1E55315D45F3C2446 /* Pods-NetworkLayer-acknowledgements.plist */,
+				6D7566F1D055830AFF0AA8A1682DE377 /* Pods-NetworkLayer-dummy.m */,
+				EC80A02FB69D4EC42FB34DBF1D812483 /* Pods-NetworkLayer-Info.plist */,
+				4CACF599A0C0D68438A6A67E0A10B86B /* Pods-NetworkLayer-umbrella.h */,
+				5477EE51A4BC7061DF76712BA023C201 /* Pods-NetworkLayer.debug.xcconfig */,
+				2292AB2E4A390FFF9FAC5D7855B85C39 /* Pods-NetworkLayer.release.xcconfig */,
+			);
+			name = "Pods-NetworkLayer";
+			path = "Target Support Files/Pods-NetworkLayer";
+			sourceTree = "<group>";
+		};
+		FB9DE5335D07E4203A02501133157915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E246791E542FD997D7B72605FE66228 /* FoursquareAPIClient */,
+				BB7F5040A5D1D65CCE2576149BA6411E /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF9382C84404A90CCF001961CA4B8780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF72BC82D3FC21F65F856E157885FB51 /* GoogleMaps.framework */,
+				6FAD59C3E3D3FC5B010E75C7AC4EE85C /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E737C203654F4DC15BBB4E047F42718 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4C486CCF522349DCA540D8A46F8831 /* Pods-Loceat-LoceatUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A73CBFF97BBFE8E858D5144E7EC402E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75DA8B808996CFEAA7F1303DB2A8279A /* FoursquareAPIClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD37932A1B629A3051BCF0ECE28F200 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4864DE986EA5C36DA0C5B3E51300FFA2 /* Pods-Loceat-LoceatTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D72601D3B404E01047FE21F5DD9D2AEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BC289B0A23B470FAAA5D7E3F1C4624 /* Pods-NetworkLayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BD2F182EE643D7B32B8706C584C1EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF5FF20222BDF6DCFB1F602112D497B /* Pods-Loceat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA882BBD8F589245D3238306D8D46E48 /* Build configuration list for PBXNativeTarget "FoursquareAPIClient" */;
+			buildPhases = (
+				A73CBFF97BBFE8E858D5144E7EC402E1 /* Headers */,
+				8BDA691E1245A1483AA0D3420B5504C6 /* Sources */,
+				22D703F4F96693161874DC4C06914B3D /* Frameworks */,
+				BD32F6204A6F829134861DEEA5FDB4BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoursquareAPIClient;
+			productName = FoursquareAPIClient;
+			productReference = 0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C4A36D98C2B80B54EFE83B34FC77EA8 /* Pods-Loceat-LoceatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71004B2AC50D5E7ED22533AE31764EE5 /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatTests" */;
+			buildPhases = (
+				ADD37932A1B629A3051BCF0ECE28F200 /* Headers */,
+				DC55943E799AADC9DC7A50C02DA293FB /* Sources */,
+				2F16F52647514D4B149D633AEA7CA07C /* Frameworks */,
+				438548963094EEF6B27ED64BBFC6C3F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10BD86155800EF509326EE652EAD3F9D /* PBXTargetDependency */,
+				513DB2BACD1C54D0C3556D81CB8552E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Loceat-LoceatTests";
+			productName = "Pods-Loceat-LoceatTests";
+			productReference = D56884BD16B3CC1A247D701CFD1A67F3 /* Pods_Loceat_LoceatTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E63C56D74BB523CA36FF5D0245E9AAD /* Pods-Loceat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BFE7E5A3423B5C7F93AC6500129C12F /* Build configuration list for PBXNativeTarget "Pods-Loceat" */;
+			buildPhases = (
+				E8BD2F182EE643D7B32B8706C584C1EE /* Headers */,
+				C430922B301FF848BDE8BC046B3AEAB0 /* Sources */,
+				5770EDB2970D6559386FC4ED61253EEC /* Frameworks */,
+				61797D71261FFB326D2CDE804A6A5254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58CA155C0E46910052725C30DDFDCC38 /* PBXTargetDependency */,
+				DF18775CE34D92ADF45052B9D81FE63D /* PBXTargetDependency */,
+			);
+			name = "Pods-Loceat";
+			productName = "Pods-Loceat";
+			productReference = 0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		783B5C60929CF52F73E231B6ECC521E5 /* Pods-Loceat-LoceatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120D62A5E66E9C60C6A00C4128AA3539 /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */;
+			buildPhases = (
+				1E737C203654F4DC15BBB4E047F42718 /* Headers */,
+				76D27D3CCFB9A7997D2D34835BC054EB /* Sources */,
+				4BF9E6637BA167F6F21E39BB275D1F3E /* Frameworks */,
+				4F5C8F7AF41B815AB94D5FC894B9B86B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF30C085DD9274CA39FCA85DCF1E64CF /* PBXTargetDependency */,
+				50BF01B594B7174811A59FB54D8711D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Loceat-LoceatUITests";
+			productName = "Pods-Loceat-LoceatUITests";
+			productReference = 8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB43E875956ABC204FAE83AB5B01CBF4 /* Pods-NetworkLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A35F27562FF0C346E5D8B05508E357E /* Build configuration list for PBXNativeTarget "Pods-NetworkLayer" */;
+			buildPhases = (
+				D72601D3B404E01047FE21F5DD9D2AEA /* Headers */,
+				BF1C52717BE5628B7AEED29B7AB1824B /* Sources */,
+				200F9766DBCAD373B7913C9DA5E04702 /* Frameworks */,
+				E0F540B10A9CF4EA9389A66DA4CF3AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342F08367F4871CFCAB3E7787D0280CB /* PBXTargetDependency */,
+			);
+			name = "Pods-NetworkLayer";
+			productName = "Pods-NetworkLayer";
+			productReference = C6B8C57D882AD57FA7B6BFF2840BB85C /* Pods_NetworkLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 480F8D8CD2EC0B3F51ADF4D490A7D88A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */,
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				6E63C56D74BB523CA36FF5D0245E9AAD /* Pods-Loceat */,
+				6C4A36D98C2B80B54EFE83B34FC77EA8 /* Pods-Loceat-LoceatTests */,
+				783B5C60929CF52F73E231B6ECC521E5 /* Pods-Loceat-LoceatUITests */,
+				EB43E875956ABC204FAE83AB5B01CBF4 /* Pods-NetworkLayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438548963094EEF6B27ED64BBFC6C3F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5C8F7AF41B815AB94D5FC894B9B86B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61797D71261FFB326D2CDE804A6A5254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD32F6204A6F829134861DEEA5FDB4BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F540B10A9CF4EA9389A66DA4CF3AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76D27D3CCFB9A7997D2D34835BC054EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F26B0E918089D3AB5296924711B5F9 /* Pods-Loceat-LoceatUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDA691E1245A1483AA0D3420B5504C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53978168EA95F4F6107FD40CD1AEBBD1 /* FoursquareAPIClient-dummy.m in Sources */,
+				7BEEF73CF1222403C2BB7F62DD3A3209 /* FoursquareAPIClient.swift in Sources */,
+				71662D2855678C6E47F4B71370411C97 /* FoursquareAuthClient.swift in Sources */,
+				1AB03F8C7C500999E963A9C83BC3EDBD /* FoursquareAuthViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF1C52717BE5628B7AEED29B7AB1824B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FD78EEAEB763574608D048A18B3CDA /* Pods-NetworkLayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C430922B301FF848BDE8BC046B3AEAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34DDF027085DC521B3599884F617A9A /* Pods-Loceat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55943E799AADC9DC7A50C02DA293FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AF5C2321B057231CBE8F3209686906 /* Pods-Loceat-LoceatTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10BD86155800EF509326EE652EAD3F9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoursquareAPIClient;
+			target = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */;
+			targetProxy = CD147BE7AA2A722B46A12EB250783DA1 /* PBXContainerItemProxy */;
+		};
+		342F08367F4871CFCAB3E7787D0280CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoursquareAPIClient;
+			target = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */;
+			targetProxy = B7A2107AE35F5B9945E441259BA69A81 /* PBXContainerItemProxy */;
+		};
+		50BF01B594B7174811A59FB54D8711D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 746FB1993776DC6AAB7DAA30E065EEB3 /* PBXContainerItemProxy */;
+		};
+		513DB2BACD1C54D0C3556D81CB8552E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 6A9C179F654C7651018FB42B33833A80 /* PBXContainerItemProxy */;
+		};
+		58CA155C0E46910052725C30DDFDCC38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoursquareAPIClient;
+			target = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */;
+			targetProxy = 7ED05917DCD829620DA1F5F14583D26B /* PBXContainerItemProxy */;
+		};
+		AF30C085DD9274CA39FCA85DCF1E64CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoursquareAPIClient;
+			target = 21E6F2BA6EDECB7A0CC549C3A1A6DD2B /* FoursquareAPIClient */;
+			targetProxy = 68E2B4D0D80331957577A39554521CB0 /* PBXContainerItemProxy */;
+		};
+		DF18775CE34D92ADF45052B9D81FE63D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = E8C813E4D7E9E6700E14EF5584EBE214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1B6A7CA0E8586BC3E2CF83A51DCFE374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300E99DFE21EEDFD39282636CF012B83 /* Pods-Loceat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44EEB2B7AAF22A6E648C9C279F6B3153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1888B33AF4F8122C62259C61C3C10F /* Pods-Loceat-LoceatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19C69226F4FD07127009E3F21F5BA88 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		555E0BBAD00C159120C37A535815D47E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DDDEA922F9E93D598C1B6B431F7BE05 /* Pods-Loceat-LoceatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		585D7569509F7A5FE1F81E246F9AD984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2292AB2E4A390FFF9FAC5D7855B85C39 /* Pods-NetworkLayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FDCD57562B861CD380F26F7CCE832C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E276FB8A0B468BC2315D768941984B3A /* Pods-Loceat-LoceatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8369CB27659AB77D335BF738783878A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724D053637F19A63BEFD0BD3120CF514 /* Pods-Loceat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat/Pods-Loceat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A0C28EC8EE5AA263C5A2F5CAA53DB1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5477EE51A4BC7061DF76712BA023C201 /* Pods-NetworkLayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8BDA586004D1B7F17647632A8D12362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1B3F14D1804A10EAE4931F6FC130C0 /* FoursquareAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient.modulemap";
+				PRODUCT_MODULE_NAME = FoursquareAPIClient;
+				PRODUCT_NAME = FoursquareAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19C69226F4FD07127009E3F21F5BA88 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18BD6F3E1EAA2DB853CACEE2B7392E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CC97C4343B91245B5B637A6BC7977C /* Pods-Loceat-LoceatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6BC48BEB7DB94C17BB64E6B513E62B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1B3F14D1804A10EAE4931F6FC130C0 /* FoursquareAPIClient.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoursquareAPIClient/FoursquareAPIClient.modulemap";
+				PRODUCT_MODULE_NAME = FoursquareAPIClient;
+				PRODUCT_NAME = FoursquareAPIClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		120D62A5E66E9C60C6A00C4128AA3539 /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18BD6F3E1EAA2DB853CACEE2B7392E9 /* Debug */,
+				6FDCD57562B861CD380F26F7CCE832C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BFE7E5A3423B5C7F93AC6500129C12F /* Build configuration list for PBXNativeTarget "Pods-Loceat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8369CB27659AB77D335BF738783878A5 /* Debug */,
+				1B6A7CA0E8586BC3E2CF83A51DCFE374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71004B2AC50D5E7ED22533AE31764EE5 /* Build configuration list for PBXNativeTarget "Pods-Loceat-LoceatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555E0BBAD00C159120C37A535815D47E /* Debug */,
+				44EEB2B7AAF22A6E648C9C279F6B3153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A35F27562FF0C346E5D8B05508E357E /* Build configuration list for PBXNativeTarget "Pods-NetworkLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0C28EC8EE5AA263C5A2F5CAA53DB1E /* Debug */,
+				585D7569509F7A5FE1F81E246F9AD984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA882BBD8F589245D3238306D8D46E48 /* Build configuration list for PBXNativeTarget "FoursquareAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8BDA586004D1B7F17647632A8D12362 /* Debug */,
+				E6BC48BEB7DB94C17BB64E6B513E62B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

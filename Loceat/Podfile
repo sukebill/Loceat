@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+workspace 'Loceat'
+
+target 'Loceat' do
+  use_frameworks!
+
+  pod 'GoogleMaps'
+  pod 'FoursquareAPIClient'
+
+  target 'LoceatTests' do
+  end
+
+  target 'LoceatUITests' do
+  end
+
+end
+
+target 'NetworkLayer' do
+  use_frameworks!
+  project 'NetworkLayer/NetworkLayer'
+  pod 'FoursquareAPIClient'
+end
