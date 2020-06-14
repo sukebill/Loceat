@@ -33,6 +33,7 @@
 		D5F4790224965EE900F8D892 /* RestaurantCategoryTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */; };
 		D5F4790B2496681800F8D892 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D5F4790A2496681800F8D892 /* Kingfisher */; };
 		D5F4790D24966EE900F8D892 /* LoceatNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790C24966EE900F8D892 /* LoceatNavigationController.swift */; };
+		D5F4790F24966F6900F8D892 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790E24966F6900F8D892 /* Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCategoryTableHeader.xib; sourceTree = "<group>"; };
 		D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategoryTableHeader.swift; sourceTree = "<group>"; };
 		D5F4790C24966EE900F8D892 /* LoceatNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoceatNavigationController.swift; sourceTree = "<group>"; };
+		D5F4790E24966F6900F8D892 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,7 +200,7 @@
 		D5D4650C2492AFA40024E6CA /* Loceat */ = {
 			isa = PBXGroup;
 			children = (
-				D5D4653E2492B0620024E6CA /* Entities */,
+				D5D4653E2492B0620024E6CA /* Utilities */,
 				D5D465422492B0810024E6CA /* Storyboards */,
 				D5D4653F2492B06E0024E6CA /* ViewControllers */,
 				D5D465412492B07D0024E6CA /* Routing */,
@@ -228,11 +230,12 @@
 			path = LoceatUITests;
 			sourceTree = "<group>";
 		};
-		D5D4653E2492B0620024E6CA /* Entities */ = {
+		D5D4653E2492B0620024E6CA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D5F4790E24966F6900F8D892 /* Loader.swift */,
 			);
-			path = Entities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D5D4653F2492B06E0024E6CA /* ViewControllers */ = {
@@ -618,6 +621,7 @@
 				D5713207249567B0004E4C99 /* UINavigationBarExtensions.swift in Sources */,
 				D57131FF24955F22004E4C99 /* RestaurantsViewController.swift in Sources */,
 				D5D465442492B0A80024E6CA /* StartViewController.swift in Sources */,
+				D5F4790F24966F6900F8D892 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

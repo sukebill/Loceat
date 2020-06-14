@@ -16,6 +16,7 @@ class StartViewController: UIViewController {
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var myLocationView: UIView!
     @IBOutlet var continueButton: UIButton!
+    @IBOutlet var blurr: UIVisualEffectView!
     
     private var locationManager: CLLocationManager?
     private var hasLoadedMap: Bool = false
@@ -32,7 +33,11 @@ class StartViewController: UIViewController {
         setUp()
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey : Any]?,
+                               context: UnsafeMutableRawPointer?) {
+        
         guard let update = change,
             let myLocation = update[NSKeyValueChangeKey.newKey] as? CLLocation else { return }
         onLocationFound(myLocation.coordinate)
@@ -52,6 +57,9 @@ class StartViewController: UIViewController {
     }
     
     private func onLocationFound(_ location: CLLocationCoordinate2D) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.hideLoader()
+        }
         myLocationFakeMarker?.position = location
         GMSGeocoder().reverseGeocodeCoordinate(location) { [weak self] (response, error) in
             self?.address = response?.firstResult()
@@ -67,6 +75,9 @@ extension StartViewController {
         setUpMap()
         setUpBottomView()
         setUpMyLocationButton()
+        let authStatus = CLLocationManager.authorizationStatus()
+        guard authStatus == .denied || authStatus == .restricted else { return }
+        onLocationDenied()
     }
     
     private func setUpMap() {
@@ -96,7 +107,47 @@ extension StartViewController {
     private func setUpLocationManager() {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
+        let authStatus = CLLocationManager.authorizationStatus()
+        guard authStatus != .denied || authStatus != .restricted else {
+            onLocationDenied()
+            return
+        }
         locationManager?.requestWhenInUseAuthorization()
+    }
+}
+
+// MARK: Loader
+
+extension StartViewController {
+    private func showLoader() {
+        blurr.isHidden = false
+        blurr.alpha = 1
+        Loader.show(to: view)
+    }
+    
+    private func hideLoader() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.blurr.alpha = 0
+        }) { (_) in
+            self.blurr.isHidden = true
+        }
+        Loader.hide(from: view)
+    }
+}
+
+// MARK: Location
+
+extension StartViewController {
+    private func onLocationDenied() {
+        onLocationFound(GMSCameraPosition.athens.target)
+        hideLoader()
+        myLocationView.isHidden = true
+    }
+    
+    private func onLocationEnabled() {
+        showLoader()
+        mapView.isMyLocationEnabled = true
+        myLocationView.isHidden = false
     }
 }
 
@@ -119,12 +170,15 @@ extension StartViewController: GMSMapViewDelegate {
 extension StartViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
-        guard status == .authorizedWhenInUse else {
-            onLocationFound(GMSCameraPosition.athens.target)
+        
+        switch status {
+        case .denied, .restricted:
+            onLocationDenied()
+        case .authorizedAlways, .authorizedWhenInUse:
+            onLocationEnabled()
+        default:
             return
         }
-        mapView.isMyLocationEnabled = true
-        myLocationView.isHidden = false
     }
 }
 

@@ -64,8 +64,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-pD-mG1">
-                                        <rect key="frame" x="29.5" y="81" width="355" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-pD-mG1">
+                                        <rect key="frame" x="29.5" y="81" width="355" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -84,23 +84,49 @@
                                     <constraint firstItem="Zge-pD-mG1" firstAttribute="leading" secondItem="g4D-Yi-eWj" secondAttribute="leading" constant="12" id="vQa-y8-IRl"/>
                                 </constraints>
                             </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-es-KDx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qke-pP-t1v">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXw-fh-BKn">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="emr-6Y-NWU">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="768"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="regular"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="systemUltraThinMaterial"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hnx-G2-6BF" secondAttribute="trailing" constant="12" id="2UM-9S-fIr"/>
                             <constraint firstAttribute="bottom" secondItem="Lmt-69-cMk" secondAttribute="bottom" id="BjL-V4-OAU"/>
+                            <constraint firstItem="dsf-es-KDx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cdc-WY-65n"/>
+                            <constraint firstItem="dsf-es-KDx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Du3-st-8RK"/>
                             <constraint firstItem="CfC-x8-PPL" firstAttribute="top" secondItem="Hnx-G2-6BF" secondAttribute="bottom" constant="12" id="MPd-sA-o6f"/>
                             <constraint firstItem="CfC-x8-PPL" firstAttribute="bottom" secondItem="Lmt-69-cMk" secondAttribute="bottom" id="RT3-Cn-OrW"/>
                             <constraint firstItem="Lmt-69-cMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SXL-RK-o64"/>
                             <constraint firstItem="Lmt-69-cMk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Unb-34-Xyr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CfC-x8-PPL" secondAttribute="trailing" id="blv-eQ-rzS"/>
+                            <constraint firstItem="dsf-es-KDx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eKj-jB-zBW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lmt-69-cMk" secondAttribute="trailing" id="gXu-RQ-PM2"/>
                             <constraint firstItem="CfC-x8-PPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qs1-we-nX7"/>
+                            <constraint firstAttribute="bottom" secondItem="dsf-es-KDx" secondAttribute="bottom" id="ydl-No-Sel"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="Zge-pD-mG1" id="CeP-1r-xIO"/>
+                        <outlet property="blurr" destination="dsf-es-KDx" id="c8H-Ot-wjM"/>
                         <outlet property="bottomView" destination="CfC-x8-PPL" id="GNd-CB-rJ7"/>
                         <outlet property="continueButton" destination="g4D-Yi-eWj" id="7XY-ci-zHm"/>
                         <outlet property="mapView" destination="Lmt-69-cMk" id="L4J-xi-EZJ"/>

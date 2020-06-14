@@ -45,10 +45,13 @@ extension RestaurantsViewController {
     }
     
     private func loadRestaurants() {
+        Loader.show(to: view)
         viewModel.fetchRestaurants { [weak self] (venues, error) in
             guard error == nil else { return }
             self?.viewModel.setUpTableData(venues)
             self?.tableView.reloadData()
+            guard let self = self else { return }
+            Loader.hide(from: self.view)
         }
     }
 }
