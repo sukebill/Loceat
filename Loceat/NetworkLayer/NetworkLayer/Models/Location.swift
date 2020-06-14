@@ -22,8 +22,8 @@ public struct Location: Codable {
         guard let distance = distance else {
             return ""
         }
-        let kilometers: Double = Double(distance) / 1000.0
-        return String(kilometers) + "km"
+        let kilometers: Double = (Double(distance) / 1000.0).roundTo(places: 1)
+        return kilometers.string + " km"
     }
     
     enum CodingKeys: String, CodingKey {

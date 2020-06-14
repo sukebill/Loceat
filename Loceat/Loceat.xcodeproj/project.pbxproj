@@ -29,6 +29,8 @@
 		D5D465482492B0E50024E6CA /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D465472492B0E50024E6CA /* AppStoryboard.swift */; };
 		D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */; };
 		D5D4654C2492B1380024E6CA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4654B2492B1380024E6CA /* Route.swift */; };
+		D5F4790024965A3100F8D892 /* RestaurantCategoryTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */; };
+		D5F4790224965EE900F8D892 /* RestaurantCategoryTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		D5D465472492B0E50024E6CA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D5D4654B2492B1380024E6CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCategoryTableHeader.xib; sourceTree = "<group>"; };
+		D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCategoryTableHeader.swift; sourceTree = "<group>"; };
 		E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,9 +162,9 @@
 		D571320224956105004E4C99 /* RestaurantsVC */ = {
 			isa = PBXGroup;
 			children = (
-				D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */,
 				D571320024955FBA004E4C99 /* RestaurantsViewModel.swift */,
-				D571320324956128004E4C99 /* RestaurantTableViewCell.swift */,
+				D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */,
+				D5F47903249660E400F8D892 /* TableView */,
 			);
 			path = RestaurantsVC;
 			sourceTree = "<group>";
@@ -264,6 +268,16 @@
 				D5D465132492AFA40024E6CA /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5F47903249660E400F8D892 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D571320324956128004E4C99 /* RestaurantTableViewCell.swift */,
+				D5F478FF24965A3100F8D892 /* RestaurantCategoryTableHeader.xib */,
+				D5F4790124965EE900F8D892 /* RestaurantCategoryTableHeader.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +396,7 @@
 			files = (
 				D5D4651A2492AFA70024E6CA /* LaunchScreen.storyboard in Resources */,
 				D5D465172492AFA70024E6CA /* Assets.xcassets in Resources */,
+				D5F4790024965A3100F8D892 /* RestaurantCategoryTableHeader.xib in Resources */,
 				D5D465152492AFA40024E6CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +597,7 @@
 				D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */,
 				D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */,
 				D571320424956128004E4C99 /* RestaurantTableViewCell.swift in Sources */,
+				D5F4790224965EE900F8D892 /* RestaurantCategoryTableHeader.swift in Sources */,
 				D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */,
 				D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */,
 				D5D4654C2492B1380024E6CA /* Route.swift in Sources */,

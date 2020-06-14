@@ -16,6 +16,7 @@
 		D5F478F824964C3F00F8D892 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F478F724964C3F00F8D892 /* Category.swift */; };
 		D5F478FA24964C4F00F8D892 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F478F924964C4F00F8D892 /* Location.swift */; };
 		D5F478FD24964C6E00F8D892 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F478FC24964C6E00F8D892 /* Icon.swift */; };
+		D5F479052496659000F8D892 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F479042496659000F8D892 /* DoubleExtensions.swift */; };
 		FBD7F9378413C2021768E860 /* Pods_NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7210AAA72F2E206C23B072EF /* Pods_NetworkLayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		D5F478F724964C3F00F8D892 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D5F478F924964C4F00F8D892 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D5F478FC24964C6E00F8D892 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		D5F479042496659000F8D892 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				D5F478F424964AC500F8D892 /* CodableExtensions.swift */,
+				D5F479042496659000F8D892 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				D5F478F0249637D000F8D892 /* LoceatAPI.swift in Sources */,
 				D5F478F2249646F100F8D892 /* Venue.swift in Sources */,
 				D5F478FA24964C4F00F8D892 /* Location.swift in Sources */,
+				D5F479052496659000F8D892 /* DoubleExtensions.swift in Sources */,
 				D5F478F524964AC500F8D892 /* CodableExtensions.swift in Sources */,
 				D5F478F824964C3F00F8D892 /* Category.swift in Sources */,
 			);

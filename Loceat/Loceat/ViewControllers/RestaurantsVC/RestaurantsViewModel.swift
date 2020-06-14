@@ -13,6 +13,16 @@ import NetworkLayer
 
 struct RestaurantsViewModel {
     let address: GMSAddress?
+    var addressHeaderText: String? {
+        address?.thoroughfare?.appending(",")
+    }
+    var cityHeaderText: String? {
+        let subLocality = address?.subLocality?.appending(", ") ?? ""
+        let locality = address?.locality?.appending(", ") ?? ""
+        let city = address?.administrativeArea?.appending(" ") ?? ""
+        let postalCode = address?.postalCode ?? ""
+        return subLocality + locality + city + postalCode
+    }
     let coordinates: CLLocationCoordinate2D
     typealias SectionData = (category: NetworkLayer.Category, restaurants: [Venue])
     var tableData: [SectionData] = []
