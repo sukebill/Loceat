@@ -177,6 +177,8 @@
 			dependencies = (
 			);
 			name = NetworkLayer;
+			packageProductDependencies = (
+			);
 			productName = NetworkLayer;
 			productReference = D5F478D52496376400F8D892 /* NetworkLayer.framework */;
 			productType = "com.apple.product-type.framework";
@@ -227,6 +229,8 @@
 				Base,
 			);
 			mainGroup = D5F478CB2496376400F8D892;
+			packageReferences = (
+			);
 			productRefGroup = D5F478D62496376400F8D892 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

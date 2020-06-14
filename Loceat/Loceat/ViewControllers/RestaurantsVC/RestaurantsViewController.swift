@@ -69,7 +69,8 @@ extension RestaurantsViewController: UITableViewDelegate {
         let city = section == 0 ? viewModel.cityHeaderText : nil
         header?.setUp(address: address,
                       city: city,
-                      category: viewModel.tableData[section].category)
+                      category: viewModel.tableData[section].category.shortName,
+                      iconUrl: viewModel.tableData[section].category.icon.url32)
         return header
     }
     

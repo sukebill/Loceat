@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = GoogleMaps;
+			productName = GoogleMaps;
 		};
 /* End PBXAggregateTarget section */
 
@@ -93,8 +94,8 @@
 
 /* Begin PBXFileReference section */
 		06FFE2BBD854D1E3ED614CD5B5995085 /* Pods-Loceat-LoceatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-LoceatUITests-resources.sh"; sourceTree = "<group>"; };
-		0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat.framework; path = "Pods-Loceat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FoursquareAPIClient.framework; path = FoursquareAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B64405EB5D4C7305698B40BB3AD36DF /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5260D5E73BCEAE077A0EB371FC7C9B /* FoursquareAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoursquareAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2E89EB11BA30A94772A083B66F0830 /* FoursquareAPIClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FoursquareAPIClient-Info.plist"; sourceTree = "<group>"; };
 		0E45BB0E84432A2D6A8C9B1CB6D82DC7 /* Pods-Loceat-LoceatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Loceat-LoceatUITests-dummy.m"; sourceTree = "<group>"; };
 		0E84684E5B77D572AF453E18094B6935 /* Pods-Loceat-LoceatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -125,18 +126,18 @@
 		7FD0ED772AF21C663DF8C79B8C8FD716 /* Pods-Loceat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat.modulemap"; sourceTree = "<group>"; };
 		838F4BD0BFBED8150FE202DE0DCEB8D9 /* FoursquareAPIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAPIClient.swift; path = FoursquareAPIClient/FoursquareAPIClient.swift; sourceTree = "<group>"; };
 		892ED77206A630AF2F895001928623E2 /* Pods-Loceat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-resources.sh"; sourceTree = "<group>"; };
-		8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat_LoceatUITests.framework; path = "Pods-Loceat-LoceatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8AC11E73F8BE78F7A17254D3B5C1FE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE6FAD23621ED7C7EE066267BC2AAA7 /* FoursquareAPIClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FoursquareAPIClient.modulemap; sourceTree = "<group>"; };
 		9C1B3F14D1804A10EAE4931F6FC130C0 /* FoursquareAPIClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoursquareAPIClient.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA1CDDB37FEC7D338743039FD641D3E /* Pods-Loceat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Loceat-frameworks.sh"; sourceTree = "<group>"; };
 		A628499103D3A75C6AFA0E5A9D17D82A /* FoursquareAPIClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoursquareAPIClient-prefix.pch"; sourceTree = "<group>"; };
 		C225E875C6F67CDBD78A6E79B56F275C /* Pods-NetworkLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetworkLayer.modulemap"; sourceTree = "<group>"; };
-		C6B8C57D882AD57FA7B6BFF2840BB85C /* Pods_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NetworkLayer.framework; path = "Pods-NetworkLayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B8C57D882AD57FA7B6BFF2840BB85C /* Pods_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77F9978BDBE8E0EBA03CEAEC5CADD01 /* Pods-Loceat-LoceatTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-LoceatTests-Info.plist"; sourceTree = "<group>"; };
 		CD0601A7F55E275F00CB1D0E27E95849 /* Pods-Loceat-LoceatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Loceat-LoceatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEB6394413A8AF130B087BAFB46E9784 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		D56884BD16B3CC1A247D701CFD1A67F3 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Loceat_LoceatTests.framework; path = "Pods-Loceat-LoceatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56884BD16B3CC1A247D701CFD1A67F3 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7669A52D849A39C7E26056FCBC0E717 /* Pods-Loceat-LoceatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Loceat-LoceatTests.modulemap"; sourceTree = "<group>"; };
 		DD2EC189535A77C9BED4B7539B067ABF /* FoursquareAuthClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoursquareAuthClient.swift; path = FoursquareAPIClient/FoursquareAuthClient.swift; sourceTree = "<group>"; };
 		DEB93656D11DF0E070D1669766C7E1DE /* Pods-Loceat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Loceat-Info.plist"; sourceTree = "<group>"; };
@@ -213,7 +214,6 @@
 				7ACA7EA612F359CC0264AE70F9D5F35B /* FoursquareAuthViewController.swift */,
 				3E8854D285EA2F116A5A96EDA81E7C3F /* Support Files */,
 			);
-			name = FoursquareAPIClient;
 			path = FoursquareAPIClient;
 			sourceTree = "<group>";
 		};
@@ -286,7 +286,6 @@
 				5FAA8CEBC4E0453143BECBE2877D3324 /* Maps */,
 				D2FC534B737C8B6DDD8C87EE6B3E7C49 /* Support Files */,
 			);
-			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
@@ -572,6 +571,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 480F8D8CD2EC0B3F51ADF4D490A7D88A /* Products */;

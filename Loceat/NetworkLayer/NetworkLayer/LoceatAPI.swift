@@ -18,6 +18,8 @@ public class LoceatAPI {
     }
 }
 
+// MARK: Restaurants
+
 public extension LoceatAPI {
     func fetchRestaurants(lat: Double,
                           long: Double,
