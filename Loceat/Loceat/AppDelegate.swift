@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navCtrl = UINavigationController(rootViewController: Route.start.viewController)
         navCtrl.setNavigationBarHidden(true, animated: false)
+        navCtrl.delegate = self
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navCtrl
         window?.makeKeyAndVisible()
@@ -30,3 +31,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              willShow viewController: UIViewController,
+                              animated: Bool) {
+        
+        viewController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
+                                                                          style: .plain,
+                                                                          target: nil,
+                                                                          action: nil)
+        guard let preferred = viewController as? PreferredNavigationBar else {
+            navigationController.navigationBar.configureBar()
+            return
+        }
+        navigationController.setNavigationBarHidden(preferred.prefersNavigationBarHidden,
+                                                    animated: animated)
+        navigationController.navigationBar.configureBar(color: preferred.preferredNavigationBarColor,
+                                                        titleColor: preferred.preferredNavigationTitleColor)
+    }
+}

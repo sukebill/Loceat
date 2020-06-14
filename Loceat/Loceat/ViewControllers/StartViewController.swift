@@ -21,6 +21,7 @@ class StartViewController: UIViewController {
     private var hasLoadedMap: Bool = false
     private var myLocationFakeMarker: GMSMarker?
     private var hasCenteredToLocationAtStartup: Bool = false
+    private var address: GMSAddress?
     
     deinit {
        mapView.removeObserver(self, forKeyPath: "myLocation")
@@ -34,20 +35,28 @@ class StartViewController: UIViewController {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard let update = change,
             let myLocation = update[NSKeyValueChangeKey.newKey] as? CLLocation else { return }
-        myLocationFakeMarker?.position = myLocation.coordinate
-        GMSGeocoder().reverseGeocodeCoordinate(myLocation.coordinate) { [weak addressLabel] (response, error) in
-            addressLabel?.text = response?.firstResult()?.lines?.first ?? "N/A"
-        }
+        onLocationFound(myLocation.coordinate)
         guard !hasCenteredToLocationAtStartup else { return }
         hasCenteredToLocationAtStartup = true
         mapView.centerTo(myLocation)
     }
     
     @IBAction func onContinueTapped(_ sender: Any) {
+        guard let coordinates = myLocationFakeMarker?.position else { return }
+        Route.restaurants(address: address,
+                          coordinates: coordinates).pushFrom(self)
     }
     
     @IBAction func onMyLocationTapped(_ sender: Any) {
         mapView.centerToMyLocation()
+    }
+    
+    private func onLocationFound(_ location: CLLocationCoordinate2D) {
+        myLocationFakeMarker?.position = location
+        GMSGeocoder().reverseGeocodeCoordinate(location) { [weak self] (response, error) in
+            self?.address = response?.firstResult()
+            self?.addressLabel.text = response?.firstResult()?.lines?.first ?? "N/A"
+        }
     }
 }
 
@@ -110,8 +119,15 @@ extension StartViewController: GMSMapViewDelegate {
 extension StartViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
-        guard status == .authorizedWhenInUse else { return }
+        guard status == .authorizedWhenInUse else {
+            onLocationFound(GMSCameraPosition.athens.target)
+            return
+        }
         mapView.isMyLocationEnabled = true
         myLocationView.isHidden = false
     }
+}
+
+extension StartViewController: PreferredNavigationBar {
+    var prefersNavigationBarHidden: Bool { true }
 }

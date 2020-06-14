@@ -1,4 +1,5 @@
 PODS:
+  - FoursquareAPIClient (5.0.1)
   - GoogleMaps (3.9.0):
     - GoogleMaps/Maps (= 3.9.0)
   - GoogleMaps/Base (3.9.0)
@@ -6,15 +7,18 @@ PODS:
     - GoogleMaps/Base
 
 DEPENDENCIES:
+  - FoursquareAPIClient
   - GoogleMaps
 
 SPEC REPOS:
   trunk:
+    - FoursquareAPIClient
     - GoogleMaps
 
 SPEC CHECKSUMS:
+  FoursquareAPIClient: 83c932298e905634e0c0cce90e3f1d6897c7a7a9
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
 
-PODFILE CHECKSUM: 47e305b609bff7ce06ad290c136e415ecf3b65fb
+PODFILE CHECKSUM: c32b869cfbd59fc84a842fc0a1dd359245fb0695
 
 COCOAPODS: 1.8.4

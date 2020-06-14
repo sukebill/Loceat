@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBADF97C6245C54A78F3E60 /* Pods_Loceat_LoceatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */; };
 		3A3ABF08FF0F929BACD73A4C /* Pods_Loceat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22879B718EF4E934721C418C /* Pods_Loceat.framework */; };
-		6676508134DC9B46137214B4 /* Pods_LoceatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */; };
 		AAA070F2F0B5E69723015FC0 /* Pods_Loceat_LoceatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */; };
 		D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */; };
 		D56FF6682492BC2C001B284A /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; };
 		D56FF6692492BC2C001B284A /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D56FF6672492BC2C001B284A /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D57131FF24955F22004E4C99 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */; };
+		D571320124955FBA004E4C99 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571320024955FBA004E4C99 /* RestaurantsViewModel.swift */; };
+		D571320424956128004E4C99 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571320324956128004E4C99 /* RestaurantTableViewCell.swift */; };
+		D5713207249567B0004E4C99 /* UINavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5713206249567B0004E4C99 /* UINavigationBarExtensions.swift */; };
 		D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */; };
 		D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D4650D2492AFA40024E6CA /* AppDelegate.swift */; };
 		D5D465152492AFA40024E6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D465132492AFA40024E6CA /* Main.storyboard */; };
@@ -61,12 +65,17 @@
 /* Begin PBXFileReference section */
 		22879B718EF4E934721C418C /* Pods_Loceat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26407B21B22282F82FCCFB0F /* Pods-Loceat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.debug.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.debug.xcconfig"; sourceTree = "<group>"; };
+		594581F356AD62782FBD902A /* Pods-Loceat-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatTests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		938D3797960B3C300BD30743 /* Pods-Loceat-LoceatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-LoceatTests/Pods-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCF1C20136FD7E2FF2110A60 /* Pods-Loceat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat.release.xcconfig"; path = "Target Support Files/Pods-Loceat/Pods-Loceat.release.xcconfig"; sourceTree = "<group>"; };
 		D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewExtensions.swift; sourceTree = "<group>"; };
 		D56FF6672492BC2C001B284A /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		D571320024955FBA004E4C99 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
+		D571320324956128004E4C99 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		D5713206249567B0004E4C99 /* UINavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtensions.swift; sourceTree = "<group>"; };
 		D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		D5D4650A2492AFA40024E6CA /* Loceat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loceat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D4650D2492AFA40024E6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,8 +94,9 @@
 		D5D465472492B0E50024E6CA /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		D5D4654B2492B1380024E6CA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatTests.debug.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loceat_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loceat-LoceatUITests.release.xcconfig"; path = "Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoceatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoceatTests.release.xcconfig"; path = "Target Support Files/Pods-LoceatTests/Pods-LoceatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6676508134DC9B46137214B4 /* Pods_LoceatTests.framework in Frameworks */,
+				2FBADF97C6245C54A78F3E60 /* Pods_Loceat_LoceatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +135,7 @@
 				D56FF6672492BC2C001B284A /* NetworkLayer.framework */,
 				22879B718EF4E934721C418C /* Pods_Loceat.framework */,
 				8A9A108F2FDB29869495C4BE /* Pods_Loceat_LoceatUITests.framework */,
-				F10D6591D2E9E8BD1ADF7AC8 /* Pods_LoceatTests.framework */,
+				E850CBB3FA89F8A421D6F1E6 /* Pods_Loceat_LoceatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,8 +149,20 @@
 				EBA82A6966D2419848ACBF09 /* Pods-Loceat-LoceatUITests.release.xcconfig */,
 				9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */,
 				F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */,
+				E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */,
+				594581F356AD62782FBD902A /* Pods-Loceat-LoceatTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D571320224956105004E4C99 /* RestaurantsVC */ = {
+			isa = PBXGroup;
+			children = (
+				D57131FE24955F22004E4C99 /* RestaurantsViewController.swift */,
+				D571320024955FBA004E4C99 /* RestaurantsViewModel.swift */,
+				D571320324956128004E4C99 /* RestaurantTableViewCell.swift */,
+			);
+			path = RestaurantsVC;
 			sourceTree = "<group>";
 		};
 		D5D465012492AFA40024E6CA = {
@@ -209,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				D5D465432492B0A80024E6CA /* StartViewController.swift */,
+				D571320224956105004E4C99 /* RestaurantsVC */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +242,7 @@
 				D5D465492492B1110024E6CA /* UIViewControllerExtensions.swift */,
 				D56FF63E2492BA27001B284A /* GMSMapViewExtensions.swift */,
 				D58A13D92494FDB100A4F488 /* UIViewExtensions.swift */,
+				D5713206249567B0004E4C99 /* UINavigationBarExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -255,6 +279,7 @@
 				D5D465082492AFA40024E6CA /* Resources */,
 				36FEA3246F741C968B558DB4 /* [CP] Copy Pods Resources */,
 				D56FF66A2492BC2C001B284A /* Embed Frameworks */,
+				C1B42CFABBDB6B4F8196AC0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +298,8 @@
 				D5D4651C2492AFA70024E6CA /* Sources */,
 				D5D4651D2492AFA70024E6CA /* Frameworks */,
 				D5D4651E2492AFA70024E6CA /* Resources */,
+				C7C21F7D16831BC804B8843E /* [CP] Embed Pods Frameworks */,
+				9BC59AA79B75B87D8727C1BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,6 +320,7 @@
 				D5D465282492AFA80024E6CA /* Frameworks */,
 				D5D465292492AFA80024E6CA /* Resources */,
 				5B8C49624F7D2F8511D16AFC /* [CP] Copy Pods Resources */,
+				5BA5BC045EC96646E223C85E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,7 +440,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LoceatTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Loceat-LoceatTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -475,6 +503,74 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5BA5BC045EC96646E223C85E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatUITests/Pods-Loceat-LoceatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC59AA79B75B87D8727C1BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B42CFABBDB6B4F8196AC0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat/Pods-Loceat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat/Pods-Loceat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loceat/Pods-Loceat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C21F7D16831BC804B8843E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loceat-LoceatTests/Pods-Loceat-LoceatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -485,10 +581,14 @@
 				D5D465482492B0E50024E6CA /* AppStoryboard.swift in Sources */,
 				D5D4650E2492AFA40024E6CA /* AppDelegate.swift in Sources */,
 				D58A13DA2494FDB100A4F488 /* UIViewExtensions.swift in Sources */,
+				D571320424956128004E4C99 /* RestaurantTableViewCell.swift in Sources */,
 				D56FF63F2492BA27001B284A /* GMSMapViewExtensions.swift in Sources */,
 				D5D4654A2492B1110024E6CA /* UIViewControllerExtensions.swift in Sources */,
 				D5D4654C2492B1380024E6CA /* Route.swift in Sources */,
 				D5D465462492B0C20024E6CA /* RouteProtocol.swift in Sources */,
+				D571320124955FBA004E4C99 /* RestaurantsViewModel.swift in Sources */,
+				D5713207249567B0004E4C99 /* UINavigationBarExtensions.swift in Sources */,
+				D57131FF24955F22004E4C99 /* RestaurantsViewController.swift in Sources */,
 				D5D465442492B0A80024E6CA /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,7 +800,7 @@
 		};
 		D5D465382492AFA80024E6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E64D311E58F5E5FDA5D6F89 /* Pods-LoceatTests.debug.xcconfig */;
+			baseConfigurationReference = E2947194B2FCBE6E92C6C1F4 /* Pods-Loceat-LoceatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,7 +822,7 @@
 		};
 		D5D465392492AFA80024E6CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2834ED655BE5FE043A2853F /* Pods-LoceatTests.release.xcconfig */;
+			baseConfigurationReference = 594581F356AD62782FBD902A /* Pods-Loceat-LoceatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
