@@ -29,7 +29,7 @@ public extension LoceatAPI {
             "ll": "\(lat),\(long)",
             "limit": "100",
             "categoryId": "4d4b7105d754a06374d81259",
-            "radius": "1000"
+            "radius": "2000"
         ]
         
         client.request(path: "venues/search", parameter: parameters) { result in
